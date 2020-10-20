@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -136,7 +137,7 @@
             // btnTest
             // 
             this.btnTest.Location = new System.Drawing.Point(712, 92);
-            this.btnTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTest.Margin = new System.Windows.Forms.Padding(2);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(125, 37);
             this.btnTest.TabIndex = 6;
@@ -152,11 +153,21 @@
             this.button1.Text = "Test2";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(182, 23);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Don\'t mind this label, just a test";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 730);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.label1);
@@ -187,6 +198,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
