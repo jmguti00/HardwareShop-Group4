@@ -38,6 +38,7 @@
             this.btnStartOrder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
+            this.btnTest3 = new System.Windows.Forms.Button();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,9 +51,9 @@
             this.grpCustomer.Controls.Add(this.btnSearchLast);
             this.grpCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCustomer.Location = new System.Drawing.Point(84, 180);
-            this.grpCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpCustomer.Padding = new System.Windows.Forms.Padding(4);
             this.grpCustomer.Size = new System.Drawing.Size(1069, 609);
             this.grpCustomer.TabIndex = 0;
             this.grpCustomer.TabStop = false;
@@ -62,7 +63,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(9, 122);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1052, 480);
             this.dataGridView1.TabIndex = 3;
@@ -71,7 +72,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(8, 86);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(269, 26);
             this.textBox1.TabIndex = 2;
@@ -80,7 +81,7 @@
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(287, 82);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(108, 34);
             this.btnSearch.TabIndex = 1;
@@ -91,7 +92,7 @@
             // 
             this.btnSearchLast.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchLast.Location = new System.Drawing.Point(8, 31);
-            this.btnSearchLast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchLast.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchLast.Name = "btnSearchLast";
             this.btnSearchLast.Size = new System.Drawing.Size(199, 34);
             this.btnSearchLast.TabIndex = 0;
@@ -102,7 +103,7 @@
             // 
             this.btnNewCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewCust.Location = new System.Drawing.Point(268, 140);
-            this.btnNewCust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNewCust.Margin = new System.Windows.Forms.Padding(4);
             this.btnNewCust.Name = "btnNewCust";
             this.btnNewCust.Size = new System.Drawing.Size(168, 32);
             this.btnNewCust.TabIndex = 3;
@@ -113,7 +114,7 @@
             // 
             this.btnExistingCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExistingCust.Location = new System.Drawing.Point(92, 140);
-            this.btnExistingCust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExistingCust.Margin = new System.Windows.Forms.Padding(4);
             this.btnExistingCust.Name = "btnExistingCust";
             this.btnExistingCust.Size = new System.Drawing.Size(168, 32);
             this.btnExistingCust.TabIndex = 4;
@@ -124,7 +125,7 @@
             // 
             this.btnStartOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartOrder.Location = new System.Drawing.Point(84, 796);
-            this.btnStartOrder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStartOrder.Margin = new System.Windows.Forms.Padding(4);
             this.btnStartOrder.Name = "btnStartOrder";
             this.btnStartOrder.Size = new System.Drawing.Size(1069, 70);
             this.btnStartOrder.TabIndex = 4;
@@ -151,18 +152,28 @@
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
             // 
+            // btnTest3
+            // 
+            this.btnTest3.Location = new System.Drawing.Point(12, 12);
+            this.btnTest3.Name = "btnTest3";
+            this.btnTest3.Size = new System.Drawing.Size(75, 23);
+            this.btnTest3.TabIndex = 7;
+            this.btnTest3.Text = "Test3";
+            this.btnTest3.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 898);
+            this.Controls.Add(this.btnTest3);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStartOrder);
             this.Controls.Add(this.btnNewCust);
             this.Controls.Add(this.btnExistingCust);
             this.Controls.Add(this.grpCustomer);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "Handy\'s Hardware Shop";
             this.grpCustomer.ResumeLayout(false);
@@ -185,6 +196,7 @@
         private System.Windows.Forms.Button btnStartOrder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.Button btnTest3;
     }
 }
 
