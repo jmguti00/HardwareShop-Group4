@@ -38,7 +38,7 @@
             this.btnStartOrder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTest = new System.Windows.Forms.Button();
-            this.btnTest3 = new System.Windows.Forms.Button();
+            this.btnTestHelp = new System.Windows.Forms.Button();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -152,21 +152,21 @@
             this.btnTest.Text = "Test";
             this.btnTest.UseVisualStyleBackColor = true;
             // 
-            // btnTest3
+            // btnTestHelp
             // 
-            this.btnTest3.Location = new System.Drawing.Point(12, 12);
-            this.btnTest3.Name = "btnTest3";
-            this.btnTest3.Size = new System.Drawing.Size(75, 23);
-            this.btnTest3.TabIndex = 7;
-            this.btnTest3.Text = "Test3";
-            this.btnTest3.UseVisualStyleBackColor = true;
+            this.btnTestHelp.Location = new System.Drawing.Point(584, 140);
+            this.btnTestHelp.Name = "btnTestHelp";
+            this.btnTestHelp.Size = new System.Drawing.Size(110, 26);
+            this.btnTestHelp.TabIndex = 7;
+            this.btnTestHelp.Text = "Help";
+            this.btnTestHelp.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1252, 898);
-            this.Controls.Add(this.btnTest3);
+            this.Controls.Add(this.btnTestHelp);
             this.Controls.Add(this.btnTest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnStartOrder);
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Button btnStartOrder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTest;
-        private System.Windows.Forms.Button btnTest3;
+        private System.Windows.Forms.Button btnTestHelp;
     }
 }
 
