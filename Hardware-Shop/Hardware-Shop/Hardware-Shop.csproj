@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Product_And_Picture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Product_And_Picture.Designer.cs" />
     <Compile Include="CustomerPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +88,7 @@
     <Compile Include="SendCode.Designer.cs">
       <DependentUpon>SendCode.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_Product_And_Picture.resx" />
     <EmbeddedResource Include="CustomerPage.resx">
       <DependentUpon>CustomerPage.cs</DependentUpon>
     </EmbeddedResource>
