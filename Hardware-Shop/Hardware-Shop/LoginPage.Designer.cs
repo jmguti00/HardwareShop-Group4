@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,13 +36,13 @@
             this.lblForgotPassword = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // txtID
+            // txtUserName
             // 
-            this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(173, 66);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(149, 30);
-            this.txtID.TabIndex = 0;
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(173, 66);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(149, 30);
+            this.txtUserName.TabIndex = 0;
             // 
             // txtPassword
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.txtUserName);
             this.Name = "LoginPage";
             this.Text = "LoginPage";
             this.ResumeLayout(false);
@@ -115,7 +115,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label1;

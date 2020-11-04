@@ -46,18 +46,18 @@ namespace Hardware_Shop
             //disable the txtProductId textbox field
             txtProductId.Enabled = false;
         }
-        
+
         //btnBrowse click event to browse for pictures
         private void btnBrowse_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "Select Photo";
             dialog.Filter = "jpg files(*.jpg)|*.jpg|png files(*.png)|*.png|All files(*.*)|*.*";
-            
+
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 picbxProductPicture.Image = new Bitmap(dialog.FileName);
-                
+
             }
         }
 
@@ -70,14 +70,14 @@ namespace Hardware_Shop
                 con.Open();
 
                 //create an update SQL query and assign it to string variable name sqlQuery
-                string sqlQuery = "Update group4.Product SET ProductPicture = @productPicture where ProductID = '" + txtProductId.Text +"' ";
+                string sqlQuery = "Update group4.Product SET ProductPicture = @productPicture where ProductID = '" + txtProductId.Text + "' ";
 
                 MemoryStream stream = new MemoryStream();
 
                 cmd = new SqlCommand(sqlQuery, con);
                 cmd.Parameters.AddWithValue("@productPicture", SavePhoto());
                 cmd.ExecuteNonQuery();
-                
+
                 //close sql connection
                 con.Close();
 
@@ -87,7 +87,7 @@ namespace Hardware_Shop
                 //method to reload the productTable datagridview named showProducTable
                 showProductTable();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
@@ -246,7 +246,7 @@ namespace Hardware_Shop
         private void btnAddPictureMenu_Click(object sender, EventArgs e)
         {
             //set the following groupbox fields to visibilty true and false
-            grpbxAddPicture.Visible = true;            
+            grpbxAddPicture.Visible = true;
             grpbxAddNewProduct.Visible = false;
             grpbxUpdateInformation.Visible = false;
 
@@ -325,7 +325,7 @@ namespace Hardware_Shop
 
                 //create an update query
                 string sqlQuery = "Update group4.Product SET ProductName = @ProductName, ProductDesc = @ProductDesc, QtyInStock = @QtyInStock, Price = @Price, ProductPicture = @ProductPicture WHERE ProductID = '" + txtProductId.Text + "' ";
-                
+
                 //pass the update query
                 SqlCommand cmd = new SqlCommand(sqlQuery, con);
 
@@ -390,7 +390,7 @@ namespace Hardware_Shop
                     txtQuantity.Text = reader[2].ToString();
                     txtPrice.Text = reader[3].ToString();
                     byte[] img = ((byte[])reader[4]);
-                    
+
                     //if the image field is null leave it as null
                     if (img == null)
                     {
@@ -408,7 +408,7 @@ namespace Hardware_Shop
                 con.Close();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }

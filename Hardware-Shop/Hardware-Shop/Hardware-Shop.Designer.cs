@@ -82,6 +82,7 @@
             this.btnManager.TabIndex = 3;
             this.btnManager.Text = "Manager";
             this.btnManager.UseVisualStyleBackColor = false;
+            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
             // 
             // btnReports
             // 

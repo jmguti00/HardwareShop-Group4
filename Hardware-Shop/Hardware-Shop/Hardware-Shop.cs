@@ -35,6 +35,7 @@ namespace Hardware_Shop
 
         private void btnManager_Click(object sender, EventArgs e)
         {
+
             User.userName = "Manager";
             this.Hide();
 

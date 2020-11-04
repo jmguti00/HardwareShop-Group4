@@ -30,7 +30,7 @@ namespace Hardware_Shop
             try
             {
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4.LoginInfo WHERE ID = '" + txtID.Text + "' and Password = '" + txtPassword.Text + "' ", con);
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4.LoginInfo WHERE User_Name = '" + txtUserName.Text + "' and User_Password = '" + txtPassword.Text + "' ", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
