@@ -117,10 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Highlight the empty row you wish to add the new product informartion to from Product Table View, type the product information in the empty text boxes, then browse for the picture to add, and then click the save button.</value>
-  </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Highlight the product row you wish to update from Product Table View, click enter, then update the desired fileds, click browse button if you wish to update the picture, then click the update button to update the information.</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Highlight the empty row you wish to add the new product informartion to from Product Table View, type the product information in the empty text boxes, then browse for the picture to add, and then click the save button.</value>
   </data>
 </root>
