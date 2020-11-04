@@ -1,0 +1,15 @@
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\bin\Debug\Hardware-Shop.exe.config
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\bin\Debug\Hardware-Shop.exe
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\bin\Debug\Hardware-Shop.pdb
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.csprojAssemblyReference.cache
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.Hardware_Shop.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.Properties.Resources.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.csproj.GenerateResource.cache
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.exe
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.pdb
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.LoginPage.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.ResetPassword.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.SendCode.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.CustomerPage.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.Add_Product_And_Picture.resources
