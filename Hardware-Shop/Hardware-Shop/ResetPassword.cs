@@ -15,6 +15,7 @@ namespace Hardware_Shop
     {
         string username = SendCode.to;
         public ResetPassword()
+
         {
             InitializeComponent();
         }
@@ -25,7 +26,7 @@ namespace Hardware_Shop
             {
                 if (txtResetPass.Text == txtResetPassVerify.Text)
                 {
-                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog= HandyHardwareShop;Integrated Security=True");
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
                     SqlCommand cmd = new SqlCommand("UPDATE [group4].[LoginInfo] SET [Password] = '" + txtResetPassVerify.Text + "' WHERE ID = '" + username + "' ", con);
                     con.Open();
                     cmd.ExecuteNonQuery();

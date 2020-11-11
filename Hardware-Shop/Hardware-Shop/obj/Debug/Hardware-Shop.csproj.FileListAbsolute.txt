@@ -12,3 +12,4 @@ C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_S
 C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.ResetPassword.resources
 C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.SendCode.resources
 C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.CustomerPage.resources
+C:\Users\julia\OneDrive\Desktop\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.Add_Product_And_Picture.resources

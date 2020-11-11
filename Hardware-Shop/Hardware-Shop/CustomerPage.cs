@@ -74,7 +74,7 @@ namespace Hardware_Shop
             }
 
             txtNewFirstName.Text = "";
-            txtLastName.Text = "";
+            txtNewLastName.Text = "";
             txtNewPhone.Text = "";
             txtNewAddress1.Text = "";
             txtNewAddress2.Text = "";
@@ -83,6 +83,15 @@ namespace Hardware_Shop
             txtNewZip.Text = "";
             
 
+        }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            Hardware_Shop hs = new Hardware_Shop();
+
+            hs.Show();
         }
     }
 }
