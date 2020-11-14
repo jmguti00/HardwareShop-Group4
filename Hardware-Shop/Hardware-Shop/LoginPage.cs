@@ -52,6 +52,13 @@ namespace Hardware_Shop
                         Add_Product_And_Picture addProductPicture = new Add_Product_And_Picture();
                         addProductPicture.Show();
                     }
+                    else if (Hardware_Shop.User.userName == "Supervisor")
+                    {
+                        this.Hide();
+
+                        EmployeePage ep = new EmployeePage();
+                        ep.Show();
+                    }
 
                 }
                 else

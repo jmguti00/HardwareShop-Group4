@@ -71,6 +71,7 @@
             this.btnSupervisor.TabIndex = 2;
             this.btnSupervisor.Text = "Supervisor";
             this.btnSupervisor.UseVisualStyleBackColor = false;
+            this.btnSupervisor.Click += new System.EventHandler(this.btnSupervisor_Click);
             // 
             // btnManager
             // 
