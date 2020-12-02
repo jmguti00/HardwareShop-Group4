@@ -26,8 +26,8 @@ namespace Hardware_Shop
             {
                 if (txtResetPass.Text == txtResetPassVerify.Text)
                 {
-                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
-                    SqlCommand cmd = new SqlCommand("UPDATE [group4].[LoginInfo] SET [Password] = '" + txtResetPassVerify.Text + "' WHERE ID = '" + username + "' ", con);
+                    SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
+                    SqlCommand cmd = new SqlCommand("UPDATE [group4bfa202330].[LoginInfo] SET [Password] = '" + txtResetPassVerify.Text + "' WHERE ID = '" + username + "' ", con);
                     con.Open();
                     cmd.ExecuteNonQuery();
                     con.Close();

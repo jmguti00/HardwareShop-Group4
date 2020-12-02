@@ -15,7 +15,7 @@ namespace Hardware_Shop
     public partial class Add_Product_And_Picture : Form
     {
         DataSet ds = new DataSet();
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd;
         public static product Product = new product();
@@ -27,7 +27,7 @@ namespace Hardware_Shop
             //display the group4Product table on the productTable datagridview
             try
             {
-                da.SelectCommand = new SqlCommand("SELECT * FROM group4.Product", con);
+                da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.Product", con);
 
                 da.Fill(ds);
 
@@ -70,7 +70,7 @@ namespace Hardware_Shop
                 con.Open();
 
                 //create an update SQL query and assign it to string variable name sqlQuery
-                string sqlQuery = "Update group4.Product SET ProductPicture = @productPicture where ProductID = '" + txtProductId.Text +"' ";
+                string sqlQuery = "Update group4bfa202330.Product SET ProductPicture = @productPicture where ProductID = '" + txtProductId.Text +"' ";
 
                 MemoryStream stream = new MemoryStream();
 
@@ -208,7 +208,7 @@ namespace Hardware_Shop
             try
             {
                 //create an insert command and add the data
-                da.InsertCommand = new SqlCommand("INSERT INTO group4.Product Values(@ProductName, @ProductDesc, @QtyInStock, @Price, @ProductPicture)", con);
+                da.InsertCommand = new SqlCommand("INSERT INTO group4bfa202330.Product Values(@ProductName, @ProductDesc, @QtyInStock, @Price, @ProductPicture)", con);
                 da.InsertCommand.Parameters.Add("@ProductName", SqlDbType.VarChar).Value = txtProductName.Text;
                 da.InsertCommand.Parameters.Add("@ProductDesc", SqlDbType.VarChar).Value = txtDescription.Text;
                 da.InsertCommand.Parameters.Add("@QtyInStock", SqlDbType.Int).Value = txtQuantity.Text;
@@ -324,7 +324,7 @@ namespace Hardware_Shop
                 con.Open();
 
                 //create an update query
-                string sqlQuery = "Update group4.Product SET ProductName = @ProductName, ProductDesc = @ProductDesc, QtyInStock = @QtyInStock, Price = @Price, ProductPicture = @ProductPicture WHERE ProductID = '" + txtProductId.Text + "' ";
+                string sqlQuery = "Update group4bfa202330.Product SET ProductName = @ProductName, ProductDesc = @ProductDesc, QtyInStock = @QtyInStock, Price = @Price, ProductPicture = @ProductPicture WHERE ProductID = '" + txtProductId.Text + "' ";
                 
                 //pass the update query
                 SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -376,7 +376,7 @@ namespace Hardware_Shop
                 con.Open();
 
                 //create a select query to assing what filds to update
-                string sql = "Select  ProductName, ProductDesc, QtyInStock, Price, ProductPicture FROM group4.Product WHERE ProductID = '" + txtProductId.Text + "'";
+                string sql = "Select  ProductName, ProductDesc, QtyInStock, Price, ProductPicture FROM group4bfa202330.Product WHERE ProductID = '" + txtProductId.Text + "'";
 
                 cmd = new SqlCommand(sql, con);
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -419,7 +419,7 @@ namespace Hardware_Shop
         {
             try
             {
-                da.SelectCommand = new SqlCommand("SELECT * FROM group4.Product", con);
+                da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.Product", con);
 
                 ds.Clear();
 

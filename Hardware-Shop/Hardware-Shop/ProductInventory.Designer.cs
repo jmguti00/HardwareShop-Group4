@@ -1,6 +1,6 @@
 ﻿namespace Hardware_Shop
 {
-    partial class ProductInvenotry
+    partial class ProductInventory
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnMain = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.btnMainPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnMain
+            // 
+            this.btnMain.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMain.Location = new System.Drawing.Point(291, 23);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(157, 33);
+            this.btnMain.TabIndex = 0;
+            this.btnMain.Text = "Main Menu";
+            this.btnMain.UseVisualStyleBackColor = true;
             // 
             // crystalReportViewer1
             // 
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(45, 54);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 62);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1143, 794);
-            this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(776, 376);
+            this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // btnMainPage
-            // 
-            this.btnMainPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainPage.Location = new System.Drawing.Point(697, 12);
-            this.btnMainPage.Name = "btnMainPage";
-            this.btnMainPage.Size = new System.Drawing.Size(181, 36);
-            this.btnMainPage.TabIndex = 1;
-            this.btnMainPage.Text = "Main Page";
-            this.btnMainPage.UseVisualStyleBackColor = true;
-            this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
-            // 
-            // ProductInvenotry
+            // ProductInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 860);
-            this.Controls.Add(this.btnMainPage);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "ProductInvenotry";
-            this.Text = "Product Inventory";
+            this.Controls.Add(this.btnMain);
+            this.Name = "ProductInventory";
+            this.Text = "ProductInventory";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Button btnMain;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private System.Windows.Forms.Button btnMainPage;
     }
 }

@@ -69,7 +69,7 @@ namespace Hardware_Shop
             this.Hide();
 
             //opens the LoginPage
-            ProductInvenotry invenotry = new ProductInvenotry();
+            ProductInventory invenotry = new ProductInventory();
             invenotry.Show();
         }
     }
