@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.Configuration;
 
 namespace Hardware_Shop
 {
-    public partial class ProductInvenotry : Form
+    public partial class ProductInventory : Form
     {
-        public ProductInvenotry()
+        public ProductInventory()
         {
             InitializeComponent();
 
@@ -36,19 +36,16 @@ namespace Hardware_Shop
                 cr.SetDataSource(ds.Tables["Product"]);
                 crystalReportViewer1.ReportSource = cr;
                 crystalReportViewer1.Refresh();
+
+
+
+
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void btnMainPage_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            Hardware_Shop hs = new Hardware_Shop();
-            hs.Show();
+        
         }
     }
 }

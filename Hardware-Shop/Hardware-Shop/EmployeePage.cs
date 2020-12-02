@@ -14,7 +14,7 @@ namespace Hardware_Shop
     public partial class EmployeePage : Form
     {
         DataSet ds = new DataSet();
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
         SqlDataAdapter da = new SqlDataAdapter();
         SqlCommand cmd;
 
@@ -32,7 +32,7 @@ namespace Hardware_Shop
             //display the group4.EmployeeTable on the productTable datagridview
             try
             {
-                da.SelectCommand = new SqlCommand("SELECT * FROM group4.EmployeeTable", con);
+                da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.EmployeeTable", con);
 
                 da.Fill(ds);
 
@@ -65,7 +65,7 @@ namespace Hardware_Shop
         {
             try
             {
-                da.SelectCommand = new SqlCommand("SELECT * FROM group4.EmployeeTable", con);
+                da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.EmployeeTable", con);
 
                 ds.Clear();
 
@@ -84,7 +84,7 @@ namespace Hardware_Shop
         {
             try
             {
-                da.InsertCommand = new SqlCommand("INSERT INTO group4.EmployeeTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", con);
+                da.InsertCommand = new SqlCommand("INSERT INTO group4group4bfa202330.EmployeeTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", con);
                 da.InsertCommand.Parameters.Add("@firstName", SqlDbType.VarChar).Value = txtNewFirstName.Text;
                 da.InsertCommand.Parameters.Add("@lastName", SqlDbType.VarChar).Value = txtNewLastName.Text;
                 da.InsertCommand.Parameters.Add("@Phone", SqlDbType.VarChar).Value = txtNewPhone.Text;
@@ -135,7 +135,7 @@ namespace Hardware_Shop
                 con.Open();
 
                 //create an update query
-                string sqlQuery = "Update group4.EmployeeTable SET firstName = @firstName, lastName = @lastName, Phone = @Phone, Address = @Address, Address2 = @Address2, City = @City, State = @State, ZipCode = @ZipCode WHERE EmployeeID = '" + Employee.employeeID + "' ";
+                string sqlQuery = "Update group4bfa202330.EmployeeTable SET firstName = @firstName, lastName = @lastName, Phone = @Phone, Address = @Address, Address2 = @Address2, City = @City, State = @State, ZipCode = @ZipCode WHERE EmployeeID = '" + Employee.employeeID + "' ";
 
                 //pass the update query
                 SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -223,7 +223,7 @@ namespace Hardware_Shop
                 try
                 {
                     con.Open();
-                    string sqlQry = "DELETE FROM group4.EmployeeTable WHERE EmployeeID = '" + Employee.employeeID + "'";
+                    string sqlQry = "DELETE FROM group4bfa202330.EmployeeTable WHERE EmployeeID = '" + Employee.employeeID + "'";
                     cmd = new SqlCommand(sqlQry, con);
                     cmd.ExecuteNonQuery();
                     con.Close();
