@@ -30,7 +30,7 @@ namespace Hardware_Shop
             try
             {
                 SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4group4bfa202330.LoginInfo WHERE User_Name = '" + txtUserName.Text + "' and User_Password = '" + txtPassword.Text + "' ", con);
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4bfa202330.LoginInfo WHERE User_Name = '" + txtUserName.Text + "' and User_Password = '" + txtPassword.Text + "' ", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 

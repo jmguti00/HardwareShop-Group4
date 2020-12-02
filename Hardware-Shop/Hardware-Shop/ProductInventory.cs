@@ -47,5 +47,13 @@ namespace Hardware_Shop
             }
         
         }
+
+        private void btnMain_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Hardware_Shop hs = new Hardware_Shop();
+            hs.Show();
+        }
     }
 }
