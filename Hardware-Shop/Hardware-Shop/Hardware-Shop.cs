@@ -62,5 +62,15 @@ namespace Hardware_Shop
             LoginPage lp = new LoginPage();
             lp.Show();
         }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            //hide the Hardware-Shop page
+            this.Hide();
+
+            //opens the LoginPage
+            ProductInvenotry invenotry = new ProductInvenotry();
+            invenotry.Show();
+        }
     }
 }
