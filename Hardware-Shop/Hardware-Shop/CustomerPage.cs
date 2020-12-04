@@ -101,5 +101,41 @@ namespace Hardware_Shop
             PlaceOrder po = new PlaceOrder();
             po.Show();
         }
+
+        public static customer newCustomer = new customer();
+        public class customer
+        {
+            public string fName { get; set; }
+            public string lName { get; set; }
+            public string phoneNum { get; set; }
+            public string address { get; set; }
+            public string address1 { get; set; }
+            public string city { get; set; }
+            public string state { get; set; }
+            public string zip { get; set; }
+            public int id { get; set; }
+            public override string ToString()
+            {
+                return fName + " " + lName;
+            }
+        }
+
+        public void customerTable_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.customerTable.Rows[e.RowIndex];
+                newCustomer.fName = row.Cells["firstName"].Value.ToString();
+                newCustomer.lName = row.Cells["lastName"].Value.ToString();
+                newCustomer.phoneNum = row.Cells["Phone"].Value.ToString();
+                newCustomer.address = row.Cells["Address"].Value.ToString();
+                newCustomer.address1 = row.Cells["Address2"].Value.ToString();
+                newCustomer.city = row.Cells["City"].Value.ToString();
+                newCustomer.state = row.Cells["State"].Value.ToString();
+                newCustomer.zip = row.Cells["ZipCode"].Value.ToString();
+                newCustomer.id = int.Parse(row.Cells["CustomerID"].Value.ToString());
+            }
+        }
     }
 }
