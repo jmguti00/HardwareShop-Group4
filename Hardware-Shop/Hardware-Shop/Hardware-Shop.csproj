@@ -60,6 +60,18 @@
     <Compile Include="Add_Product_And_Picture.Designer.cs">
       <DependentUpon>Add_Product_And_Picture.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuildingAndConstuction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuildingAndConstuction.Designer.cs">
+      <DependentUpon>BuildingAndConstuction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOutForm.Designer.cs">
+      <DependentUpon>CheckOutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrystalReport1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,11 +96,30 @@
     <Compile Include="Hardware-Shop.Designer.cs">
       <DependentUpon>Hardware-Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="HomeRenovations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeRenovations.Designer.cs">
+      <DependentUpon>HomeRenovations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itemClass.cs" />
+    <Compile Include="LawnAndGarden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LawnAndGarden.Designer.cs">
+      <DependentUpon>LawnAndGarden.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaceOrder.Designer.cs">
+      <DependentUpon>PlaceOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductInventory.cs">
       <SubType>Form</SubType>
@@ -110,8 +141,26 @@
     <Compile Include="SendCode.Designer.cs">
       <DependentUpon>SendCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="ToolsAndAccessories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolsAndAccessories.Designer.cs">
+      <DependentUpon>ToolsAndAccessories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCart.Designer.cs">
+      <DependentUpon>ViewCart.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Product_And_Picture.resx">
       <DependentUpon>Add_Product_And_Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuildingAndConstuction.resx">
+      <DependentUpon>BuildingAndConstuction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOutForm.resx">
+      <DependentUpon>CheckOutForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrystalReport1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -126,8 +175,17 @@
     <EmbeddedResource Include="Hardware-Shop.resx">
       <DependentUpon>Hardware-Shop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HomeRenovations.resx">
+      <DependentUpon>HomeRenovations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LawnAndGarden.resx">
+      <DependentUpon>LawnAndGarden.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaceOrder.resx">
+      <DependentUpon>PlaceOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductInventory.resx">
       <DependentUpon>ProductInventory.cs</DependentUpon>
@@ -147,6 +205,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SendCode.resx">
       <DependentUpon>SendCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolsAndAccessories.resx">
+      <DependentUpon>ToolsAndAccessories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCart.resx">
+      <DependentUpon>ViewCart.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

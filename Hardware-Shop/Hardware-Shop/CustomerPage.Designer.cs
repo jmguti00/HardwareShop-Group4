@@ -130,6 +130,7 @@
             this.btnStartOrder.TabIndex = 5;
             this.btnStartOrder.Text = "Start Order";
             this.btnStartOrder.UseVisualStyleBackColor = true;
+            this.btnStartOrder.Click += new System.EventHandler(this.btnStartOrder_Click);
             // 
             // grpbxAddNewCustomer
             // 
