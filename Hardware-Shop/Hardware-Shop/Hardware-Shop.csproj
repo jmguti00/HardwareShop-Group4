@@ -90,12 +90,6 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlaceOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PlaceOrder.Designer.cs">
-      <DependentUpon>PlaceOrder.cs</DependentUpon>
-    </Compile>
     <Compile Include="ProductInventory.cs">
       <SubType>Form</SubType>
     </Compile>
