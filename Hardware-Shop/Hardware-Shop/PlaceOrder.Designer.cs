@@ -48,6 +48,7 @@
             // 
             // btnBuildingConstruction
             // 
+            this.btnBuildingConstruction.BackgroundImage = global::Hardware_Shop.Properties.Resources.cementmixer;
             this.btnBuildingConstruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuildingConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuildingConstruction.Location = new System.Drawing.Point(483, 373);
