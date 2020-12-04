@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHomeReno = new System.Windows.Forms.Button();
             this.btnBuildingConstruction = new System.Windows.Forms.Button();
+            this.btnReturnToCust = new System.Windows.Forms.Button();
+            this.btnHomeReno = new System.Windows.Forms.Button();
             this.btnLawnGarden = new System.Windows.Forms.Button();
             this.btnToolsAccessories = new System.Windows.Forms.Button();
-            this.btnReturnToCust = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,6 +45,30 @@
             this.label1.Size = new System.Drawing.Size(466, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Shop by Department";
+            // 
+            // btnBuildingConstruction
+            // 
+            this.btnBuildingConstruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuildingConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuildingConstruction.Location = new System.Drawing.Point(483, 373);
+            this.btnBuildingConstruction.Name = "btnBuildingConstruction";
+            this.btnBuildingConstruction.Size = new System.Drawing.Size(239, 177);
+            this.btnBuildingConstruction.TabIndex = 3;
+            this.btnBuildingConstruction.Text = "&Building and Construction";
+            this.btnBuildingConstruction.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnBuildingConstruction.UseVisualStyleBackColor = true;
+            this.btnBuildingConstruction.Click += new System.EventHandler(this.btnBuildingConstruction_Click);
+            // 
+            // btnReturnToCust
+            // 
+            this.btnReturnToCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnToCust.Location = new System.Drawing.Point(150, 570);
+            this.btnReturnToCust.Name = "btnReturnToCust";
+            this.btnReturnToCust.Size = new System.Drawing.Size(147, 33);
+            this.btnReturnToCust.TabIndex = 5;
+            this.btnReturnToCust.Text = "&Return to Customers";
+            this.btnReturnToCust.UseVisualStyleBackColor = true;
+            this.btnReturnToCust.Click += new System.EventHandler(this.btnReturnToCust_Click);
             // 
             // btnHomeReno
             // 
@@ -59,20 +83,6 @@
             this.btnHomeReno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHomeReno.UseVisualStyleBackColor = true;
             this.btnHomeReno.Click += new System.EventHandler(this.btnHomeReno_Click);
-            // 
-            // btnBuildingConstruction
-            // 
-            this.btnBuildingConstruction.BackgroundImage = global::Hardware_Shop.Properties.Resources.Layer_3_pasted_;
-            this.btnBuildingConstruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuildingConstruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuildingConstruction.Location = new System.Drawing.Point(483, 373);
-            this.btnBuildingConstruction.Name = "btnBuildingConstruction";
-            this.btnBuildingConstruction.Size = new System.Drawing.Size(239, 177);
-            this.btnBuildingConstruction.TabIndex = 3;
-            this.btnBuildingConstruction.Text = "&Building and Construction";
-            this.btnBuildingConstruction.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnBuildingConstruction.UseVisualStyleBackColor = true;
-            this.btnBuildingConstruction.Click += new System.EventHandler(this.btnBuildingConstruction_Click);
             // 
             // btnLawnGarden
             // 
@@ -103,17 +113,6 @@
             this.btnToolsAccessories.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnToolsAccessories.UseVisualStyleBackColor = true;
             this.btnToolsAccessories.Click += new System.EventHandler(this.btnToolsAccessories_Click);
-            // 
-            // btnReturnToCust
-            // 
-            this.btnReturnToCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturnToCust.Location = new System.Drawing.Point(150, 570);
-            this.btnReturnToCust.Name = "btnReturnToCust";
-            this.btnReturnToCust.Size = new System.Drawing.Size(147, 33);
-            this.btnReturnToCust.TabIndex = 5;
-            this.btnReturnToCust.Text = "&Return to Customers";
-            this.btnReturnToCust.UseVisualStyleBackColor = true;
-            this.btnReturnToCust.Click += new System.EventHandler(this.btnReturnToCust_Click);
             // 
             // PlaceOrder
             // 
