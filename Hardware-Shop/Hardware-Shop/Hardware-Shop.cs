@@ -21,9 +21,13 @@ namespace Hardware_Shop
 
         private void btnCustomer_Click(object sender, EventArgs e)
         {
+            //assigns Customer to User.userName
             User.userName = "Customer";
+
+            //hide the Hardware-Shop page
             this.Hide();
 
+            //opens the LoginPage
             LoginPage lp = new LoginPage();
             lp.Show();
         }
@@ -35,11 +39,38 @@ namespace Hardware_Shop
 
         private void btnManager_Click(object sender, EventArgs e)
         {
+            //assigns Manager to User.userName
             User.userName = "Manager";
+            
+            //hide the Hardware-Shop page
             this.Hide();
 
+            //opens the LoginPage
             LoginPage lp = new LoginPage();
             lp.Show();
+        }
+
+        private void btnSupervisor_Click(object sender, EventArgs e)
+        {
+            //assigns Supervisor to User.userName
+            User.userName = "Supervisor";
+
+            //hide the Hardware-Shop page
+            this.Hide();
+
+            //opens the LoginPage
+            LoginPage lp = new LoginPage();
+            lp.Show();
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            //hide the Hardware-Shop page
+            this.Hide();
+
+            //opens the LoginPage
+            ProductInventory invenotry = new ProductInventory();
+            invenotry.Show();
         }
     }
 }

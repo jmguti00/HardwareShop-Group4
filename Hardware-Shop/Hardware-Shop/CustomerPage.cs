@@ -14,7 +14,7 @@ namespace Hardware_Shop
     public partial class CustomerPage : Form
     {
         DataSet ds = new DataSet();
-        SqlConnection cs = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
+        SqlConnection cs = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
         SqlDataAdapter da = new SqlDataAdapter();
         public CustomerPage()
         {
@@ -22,7 +22,7 @@ namespace Hardware_Shop
 
             try
             {
-                da.SelectCommand = new SqlCommand("SELECT * FROM group4.CustomerTable", cs);
+                da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.CustomerTable", cs);
 
                 da.Fill(ds);
 
@@ -38,7 +38,7 @@ namespace Hardware_Shop
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            da.SelectCommand = new SqlCommand("SELECT * FROM group4.CustomerTable", cs);
+            da.SelectCommand = new SqlCommand("SELECT * FROM group4bfa202330.CustomerTable", cs);
 
             ds.Clear();
 
@@ -52,7 +52,7 @@ namespace Hardware_Shop
         {
             try
             {
-                da.InsertCommand = new SqlCommand("INSERT INTO group4.CustomerTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", cs);
+                da.InsertCommand = new SqlCommand("INSERT INTO group4bfa202330.CustomerTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", cs);
                 da.InsertCommand.Parameters.Add("@firstName", SqlDbType.VarChar).Value = txtNewFirstName.Text;
                 da.InsertCommand.Parameters.Add("@lastName", SqlDbType.VarChar).Value = txtNewLastName.Text;
                 da.InsertCommand.Parameters.Add("@Phone", SqlDbType.VarChar).Value = txtNewPhone.Text;

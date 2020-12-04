@@ -29,8 +29,8 @@ namespace Hardware_Shop
         {
             try
             {
-                SqlConnection con = new SqlConnection("Data Source=DESKTOP-BNB45KS\\MSSQLSERVER1;Initial Catalog=HandyHardwareShop;Integrated Security=True");
-                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4.LoginInfo WHERE User_Name = '" + txtUserName.Text + "' and User_Password = '" + txtPassword.Text + "' ", con);
+                SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT * FROM group4bfa202330.LoginInfo WHERE User_Name = '" + txtUserName.Text + "' and User_Password = '" + txtPassword.Text + "' ", con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
 
@@ -51,6 +51,13 @@ namespace Hardware_Shop
 
                         Add_Product_And_Picture addProductPicture = new Add_Product_And_Picture();
                         addProductPicture.Show();
+                    }
+                    else if (Hardware_Shop.User.userName == "Supervisor")
+                    {
+                        this.Hide();
+
+                        EmployeePage ep = new EmployeePage();
+                        ep.Show();
                     }
 
                 }
