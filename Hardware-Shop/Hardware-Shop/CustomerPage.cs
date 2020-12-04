@@ -93,5 +93,13 @@ namespace Hardware_Shop
 
             hs.Show();
         }
+
+        private void btnStartOrder_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            PlaceOrder po = new PlaceOrder();
+            po.Show();
+        }
     }
 }
