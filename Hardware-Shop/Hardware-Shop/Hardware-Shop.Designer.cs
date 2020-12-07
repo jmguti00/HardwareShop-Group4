@@ -107,6 +107,7 @@
             this.btnContactNumbers.TabIndex = 8;
             this.btnContactNumbers.Text = "Contact Numbers";
             this.btnContactNumbers.UseVisualStyleBackColor = false;
+            this.btnContactNumbers.Click += new System.EventHandler(this.btnContactNumbers_Click);
             // 
             // btnVisionStatement
             // 
@@ -156,7 +157,7 @@
             // 
             this.lblInfo.BackColor = System.Drawing.Color.GhostWhite;
             this.lblInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblInfo.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInfo.Location = new System.Drawing.Point(14, 15);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(801, 197);

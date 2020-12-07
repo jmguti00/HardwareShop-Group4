@@ -19,7 +19,6 @@ namespace Hardware_Shop
             InitializeComponent();
         }
 
-        //btnCustomer click event to open LoginPage
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             //assigns Customer to User.userName
@@ -33,18 +32,16 @@ namespace Hardware_Shop
             lp.Show();
         }
 
-        //create a public class named user
         public class user
         {
             public string userName { get; set; }
         }
 
-        //btnManager click event to open LoginPage
         private void btnManager_Click(object sender, EventArgs e)
         {
             //assigns Manager to User.userName
             User.userName = "Manager";
-
+            
             //hide the Hardware-Shop page
             this.Hide();
 
@@ -53,7 +50,6 @@ namespace Hardware_Shop
             lp.Show();
         }
 
-        //btnSupervisor click event to open LoginPage
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
             //assigns Supervisor to User.userName
@@ -73,15 +69,8 @@ namespace Hardware_Shop
             this.Hide();
 
             //opens the LoginPage
-            ProductInvenotry inventory = new ProductInvenotry();
-            inventory.Show();
-        }
-
-        internal class CrystalReport1
-        {
-            public CrystalReport1()
-            {
-            }
+            ProductInventory invenotry = new ProductInventory();
+            invenotry.Show();
         }
 
         private void btnMissionStatement_Click(object sender, EventArgs e)
@@ -95,12 +84,22 @@ namespace Hardware_Shop
 
         private void btnVisionStatement_Click(object sender, EventArgs e)
         {
-            string vissionStatment = "We envision reaching every customer in our community excelling with customer service along with providing product delivery on time. By 2025 we will: " +
+            string vissionStatment = "We envision reaching every customer in our community excelling with customer service along with providing product delivery on time. \n\nBy 2025 we will: \n" +
                                      "\n* Be in EVERY city" +
                                      "\n* Expand our footprint" +
                                      "\n* Achieve all of our customer’s satisfactions";
 
             lblInfo.Text = vissionStatment;
+        }
+
+        private void btnContactNumbers_Click(object sender, EventArgs e)
+        {
+            string contactInfo = "Manager: Kanin Furlow, Phone Number: (956) 399-0101\n" +
+                                 "\nSupervisor: Julian Gutierrez, Phone Number: (956) 399-0102\n" +
+                                 "\nHR Department: Sterling Ford, Phone Number: (956) 399-0103\n" +
+                                 "\nCustomer Service Phone Number: (956) 399-0104";
+
+            lblInfo.Text = contactInfo;
         }
     }
 }

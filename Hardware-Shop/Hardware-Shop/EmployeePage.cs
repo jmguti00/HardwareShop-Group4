@@ -84,7 +84,7 @@ namespace Hardware_Shop
         {
             try
             {
-                da.InsertCommand = new SqlCommand("INSERT INTO group4bfa202330.EmployeeTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", con);
+                da.InsertCommand = new SqlCommand("INSERT INTO group4group4bfa202330.EmployeeTable Values(@firstName, @lastName, @Phone, @Address, @Address2, @City, @State, @ZipCode)", con);
                 da.InsertCommand.Parameters.Add("@firstName", SqlDbType.VarChar).Value = txtNewFirstName.Text;
                 da.InsertCommand.Parameters.Add("@lastName", SqlDbType.VarChar).Value = txtNewLastName.Text;
                 da.InsertCommand.Parameters.Add("@Phone", SqlDbType.VarChar).Value = txtNewPhone.Text;

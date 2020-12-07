@@ -29,29 +29,32 @@ namespace Hardware_Shop
             randomCode = (rand.Next(999999)).ToString();
             MailMessage message = new MailMessage();
             to = (txtEmail.Text).ToString();
-            from = "julian.m.gtz@gmail.com";
-            pass = "sdiaenrqonqkdhkv";
-            messageBody = "Your reset code is " + randomCode;
-            message.To.Add(to);
-            message.From = new MailAddress(from);
-            message.Body = messageBody;
-            message.Subject = "Password reseting code";
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.EnableSsl = true;
-            smtp.Port = 587;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.Credentials = new NetworkCredential(from, pass);
 
-            try
+            if(txtEmail.Text == "julian.m.gtz@gmail.com")
             {
-                smtp.Send(message);
-                MessageBox.Show("Code send successfully");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                from = "julian.m.gtz@gmail.com";
+                pass = "sdiaenrqonqkdhkv";
+                messageBody = "Your reset code is " + randomCode;
+                message.To.Add(to);
+                message.From = new MailAddress(from);
+                message.Body = messageBody;
+                message.Subject = "Password reseting code";
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential(from, pass);
 
+                try
+                {
+                    smtp.Send(message);
+                    MessageBox.Show("Code send successfully");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
 
         }
 
@@ -60,8 +63,10 @@ namespace Hardware_Shop
             if (randomCode == (txtVerifyCode.Text).ToString())
             {
                 to = txtEmail.Text;
-                ResetPassword rp = new ResetPassword();
+
                 this.Hide();
+
+                ResetPassword rp = new ResetPassword();
                 rp.Show();
             }
             else
