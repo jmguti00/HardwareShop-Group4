@@ -21,34 +21,14 @@ namespace Hardware_Shop
 
         private void btnCanel_Click(object sender, EventArgs e)
         {
-            PlaceOrder placeOrder = new PlaceOrder();
-            placeOrder.Show();
+            ToolsAndAccessories.cart.Clear();
+            ToolsAndAccessories.vc.lstOrderSummary.Items.Clear();
+            ToolsAndAccessories.vc.lblTotal.Text = "";
+            ToolsAndAccessories.total = 0;
+
+            Hardware_Shop hs = new Hardware_Shop();
+            hs.Show();
             this.Hide();
-        }
-
-        private void CheckOutForm_Load(object sender, EventArgs e)
-        {
-            //lblCustomerName.Text = CustomerPage.newCustomer.ToString();
-            //lblAddress.Text = CustomerPage.newCustomer.address;
-            //lblAddress1.Text = CustomerPage.newCustomer.address1;
-            //lblCity.Text = CustomerPage.newCustomer.city;
-            //lblState.Text = CustomerPage.newCustomer.state;
-            //lblZip.Text = CustomerPage.newCustomer.zip;
-            //lblPhoneNumber.Text = CustomerPage.newCustomer.phoneNum;
-
-            //float deliveryFee = 9.99f;
-            //float tax = 0.08f;
-            //float balance = 0;
-
-            //lblTotal.Text = ToolsAndAccessories.total.ToString("C2");
-            //lblDeliveryFee.Text = deliveryFee.ToString("C2");
-            //tax *= ToolsAndAccessories.total;
-            //lblTax.Text = tax.ToString("C2");
-            //balance = ToolsAndAccessories.total + tax + deliveryFee;
-            //lblBalance.Text = balance.ToString("C2");
-
-            
-
         }
 
         public static float total = 0;
@@ -81,6 +61,7 @@ namespace Hardware_Shop
                 con.Open();
                 string payment = "";
                 int orderNumber = 0;
+                int theCustomerID;
 
                 if (rdoCheck.Checked == true)
                 {
@@ -93,9 +74,12 @@ namespace Hardware_Shop
                 if(rdoCreditCard.Checked == true)
                 {
                     payment = "CREDIT";
+                    grpCardInfo.Enabled = true;
                 }
 
-                SqlCommand cmd = new SqlCommand("insert into group4bfa202330.OrderTable values('"+orderDate+"','"+CustomerPage.newCustomer.id+"','"+orderNumber+"','"+lblBalance.Text+"','"+payment+"')",con);
+                theCustomerID = int.Parse(CustomerPage.newCustomer.id.ToString());
+
+                SqlCommand cmd = new SqlCommand("insert into group4bfa202330.OrderTable values('"+orderDate+"','"+theCustomerID+"','"+orderNumber+"','"+lblBalance.Text+"','"+payment+"')",con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Order Submitted!");
                 
@@ -109,7 +93,17 @@ namespace Hardware_Shop
                     com.ExecuteNonQuery();
                 }
 
+                ToolsAndAccessories.cart.Clear();
+                ToolsAndAccessories.vc.lstOrderSummary.Items.Clear();
+                ToolsAndAccessories.vc.lblTotal.Text = "";
+                ToolsAndAccessories.total = 0;
+
                 con.Close();
+
+                this.Close();
+
+                Hardware_Shop hs = new Hardware_Shop();
+                hs.Show();
 
             }
             catch (Exception ex)
@@ -123,7 +117,7 @@ namespace Hardware_Shop
         {
             if (rdoCash.Checked)
             {
-                grpPayment.Enabled = false;
+                grpCardInfo.Enabled = false;
             }
         }
 
@@ -131,11 +125,12 @@ namespace Hardware_Shop
         {
             if (rdoCheck.Checked)
             {
-                grpPayment.Enabled = false;
+                grpCardInfo.Enabled = false;
             }
         }
 
-        private void CheckOutForm_Load_1(object sender, EventArgs e)
+
+        private void CheckOutForm_Load(object sender, EventArgs e)
         {
             lblCustomerName.Text = CustomerPage.newCustomer.ToString();
             lblAddress.Text = CustomerPage.newCustomer.address;
@@ -159,7 +154,27 @@ namespace Hardware_Shop
             foreach (ToolsAndAccessories.item i in ToolsAndAccessories.vc.lstOrderSummary.Items)
             {
                 lstOrderSummary.Items.Add(i);
-            } 
+            }
+        }
+
+        private void btnAddMoreItems_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            PlaceOrder po = new PlaceOrder();
+            po.Show();
+        }
+
+        private void rdoCreditCard_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoCreditCard.Checked)
+            {
+                grpCardInfo.Enabled = true;
+            }
+            else
+            {
+                grpCardInfo.Enabled = false;
+            }
         }
     }
 }
