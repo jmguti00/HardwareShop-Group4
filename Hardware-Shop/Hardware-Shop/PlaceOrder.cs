@@ -15,6 +15,8 @@ namespace Hardware_Shop
         public PlaceOrder()
         {
             InitializeComponent();
+
+            lblOrderFor.Text = CustomerPage.newCustomer.ToString();
         }
 
         private void PlaceOrder_Load(object sender, EventArgs e)

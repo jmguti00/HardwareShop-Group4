@@ -52,6 +52,8 @@ namespace Hardware_Shop
         public ToolsAndAccessories()
         {
             InitializeComponent();
+
+            lblOrderFor.Text = CustomerPage.newCustomer.ToString();
         }
 
         
@@ -281,12 +283,6 @@ namespace Hardware_Shop
             this.Hide();
         }
 
-        private void btnAddShovels_Click(object sender, EventArgs e)
-        {
-
-            
-        }
-
         //Add shovels to order
         private void btnAddShovels_Click_1(object sender, EventArgs e)
         {
@@ -324,29 +320,6 @@ namespace Hardware_Shop
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            int index = lstCart.SelectedIndex;
-            //amountShovels--;
-            item test = new item();
-            test = (item)lstCart.SelectedItem;
-
-            if(index != -1)
-            {
-                lstCart.Items.RemoveAt(index);
-                test.removeItem();
-                lblTotal.Text = total.ToString("C2");
-            }
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            lstCart.Items.Clear();
-            lblTotal.Text = "";
-            total = 0;
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)

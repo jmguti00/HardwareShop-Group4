@@ -48,6 +48,8 @@ namespace Hardware_Shop
         public BuildingAndConstuction()
         {
             InitializeComponent();
+
+            lblOrderFor.Text = CustomerPage.newCustomer.ToString();
         }
 
         private void BuildingAndConstuction_Load(object sender, EventArgs e)
@@ -341,6 +343,14 @@ namespace Hardware_Shop
         private void btnViewCart_Click(object sender, EventArgs e)
         {
             ToolsAndAccessories.vc.Show();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            CheckOutForm checkOut = new CheckOutForm();
+            checkOut.Show();
         }
     }
 }

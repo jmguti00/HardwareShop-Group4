@@ -51,6 +51,8 @@ namespace Hardware_Shop
         public HomeRenovations()
         {
             InitializeComponent();
+
+            lblOrderFor.Text = CustomerPage.newCustomer.ToString();
         }
 
         private void HomeRenovations_Load(object sender, EventArgs e)
@@ -576,6 +578,14 @@ namespace Hardware_Shop
         private void btnViewCart_Click(object sender, EventArgs e)
         {
             ToolsAndAccessories.vc.Show();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            CheckOutForm checkOut = new CheckOutForm();
+            checkOut.Show();
         }
     }
 }
