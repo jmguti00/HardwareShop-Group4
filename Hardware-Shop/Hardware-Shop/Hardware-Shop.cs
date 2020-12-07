@@ -72,5 +72,24 @@ namespace Hardware_Shop
             ProductInventory invenotry = new ProductInventory();
             invenotry.Show();
         }
+
+        private void btnMissionStatement_Click(object sender, EventArgs e)
+        {
+            string missionStatment = "\n\n  Our mission is to provide customers " +
+                                      "with all their households \n  needs " +
+                                      "making it readily available when " +
+                                      "they need it the most. ";
+            lblInfo.Text = missionStatment;
+        }
+
+        private void btnVisionStatement_Click(object sender, EventArgs e)
+        {
+            string vissionStatment = "We envision reaching every customer in our community excelling with customer service along with providing product delivery on time. By 2025 we will: " +
+                                     "\n* Be in EVERY city" +
+                                     "\n* Expand our footprint" +
+                                     "\n* Achieve all of our customer’s satisfactions";
+
+            lblInfo.Text = vissionStatment;
+        }
     }
 }
