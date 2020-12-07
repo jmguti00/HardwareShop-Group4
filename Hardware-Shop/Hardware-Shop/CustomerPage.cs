@@ -16,6 +16,8 @@ namespace Hardware_Shop
         DataSet ds = new DataSet();
         SqlConnection cs = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
         SqlDataAdapter da = new SqlDataAdapter();
+        public static customer newCustomer = new customer();
+
         public CustomerPage()
         {
             InitializeComponent();
@@ -98,11 +100,21 @@ namespace Hardware_Shop
         {
             this.Hide();
 
+            //assign the index of productTable datagridview
+            newCustomer.id = customerTable[0, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.fName = customerTable[1, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.lName = customerTable[2, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.phoneNum = customerTable[3, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.address = customerTable[4, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.address1 = customerTable[5, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.city = customerTable[6, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.state = customerTable[7, customerTable.CurrentRow.Index].Value.ToString();
+            newCustomer.zip = customerTable[8, customerTable.CurrentRow.Index].Value.ToString();
+
             PlaceOrder po = new PlaceOrder();
             po.Show();
         }
-
-        public static customer newCustomer = new customer();
+        
         public class customer
         {
             public string fName { get; set; }
@@ -113,29 +125,13 @@ namespace Hardware_Shop
             public string city { get; set; }
             public string state { get; set; }
             public string zip { get; set; }
-            public int id { get; set; }
+            public string id { get; set; }
             public override string ToString()
             {
                 return fName + " " + lName;
             }
         }
 
-        public void customerTable_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.customerTable.Rows[e.RowIndex];
-                newCustomer.fName = row.Cells["firstName"].Value.ToString();
-                newCustomer.lName = row.Cells["lastName"].Value.ToString();
-                newCustomer.phoneNum = row.Cells["Phone"].Value.ToString();
-                newCustomer.address = row.Cells["Address"].Value.ToString();
-                newCustomer.address1 = row.Cells["Address2"].Value.ToString();
-                newCustomer.city = row.Cells["City"].Value.ToString();
-                newCustomer.state = row.Cells["State"].Value.ToString();
-                newCustomer.zip = row.Cells["ZipCode"].Value.ToString();
-                newCustomer.id = int.Parse(row.Cells["CustomerID"].Value.ToString());
-            }
-        }
+        
     }
 }
