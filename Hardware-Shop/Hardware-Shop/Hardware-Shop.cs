@@ -19,6 +19,7 @@ namespace Hardware_Shop
             InitializeComponent();
         }
 
+        //btnCustomer click event to open LoginPage
         private void btnCustomer_Click(object sender, EventArgs e)
         {
             //assigns Customer to User.userName
@@ -32,16 +33,18 @@ namespace Hardware_Shop
             lp.Show();
         }
 
+        //create a public class named user
         public class user
         {
             public string userName { get; set; }
         }
 
+        //btnManager click event to open LoginPage
         private void btnManager_Click(object sender, EventArgs e)
         {
             //assigns Manager to User.userName
             User.userName = "Manager";
-            
+
             //hide the Hardware-Shop page
             this.Hide();
 
@@ -50,6 +53,7 @@ namespace Hardware_Shop
             lp.Show();
         }
 
+        //btnSupervisor click event to open LoginPage
         private void btnSupervisor_Click(object sender, EventArgs e)
         {
             //assigns Supervisor to User.userName
@@ -69,8 +73,15 @@ namespace Hardware_Shop
             this.Hide();
 
             //opens the LoginPage
-            ProductInventory invenotry = new ProductInventory();
-            invenotry.Show();
+            ProductInvenotry inventory = new ProductInvenotry();
+            inventory.Show();
+        }
+
+        internal class CrystalReport1
+        {
+            public CrystalReport1()
+            {
+            }
         }
 
         private void btnMissionStatement_Click(object sender, EventArgs e)
