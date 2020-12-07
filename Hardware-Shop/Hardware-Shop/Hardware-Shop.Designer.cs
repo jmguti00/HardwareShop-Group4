@@ -118,6 +118,7 @@
             this.btnVisionStatement.TabIndex = 7;
             this.btnVisionStatement.Text = "Vision Statement";
             this.btnVisionStatement.UseVisualStyleBackColor = false;
+            this.btnVisionStatement.Click += new System.EventHandler(this.btnVisionStatement_Click);
             // 
             // btnMissionStatement
             // 
@@ -129,6 +130,7 @@
             this.btnMissionStatement.TabIndex = 6;
             this.btnMissionStatement.Text = "Mission Statement";
             this.btnMissionStatement.UseVisualStyleBackColor = false;
+            this.btnMissionStatement.Click += new System.EventHandler(this.btnMissionStatement_Click);
             // 
             // btnHelp
             // 
