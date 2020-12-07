@@ -20,7 +20,6 @@ namespace Hardware_Shop
         SqlCommand cmd;
         public static product Product = new product();
 
-
         public Add_Product_And_Picture()
         {
             InitializeComponent();

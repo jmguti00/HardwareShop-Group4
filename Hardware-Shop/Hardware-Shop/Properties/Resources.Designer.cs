@@ -63,9 +63,39 @@ namespace Hardware_Shop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _32217641660027p {
+            get {
+                object obj = ResourceManager.GetObject("32217641660027p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cementmixer {
+            get {
+                object obj = ResourceManager.GetObject("cementmixer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HandyAndy {
             get {
                 object obj = ResourceManager.GetObject("HandyAndy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home_renovation {
+            get {
+                object obj = ResourceManager.GetObject("home-renovation", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +116,16 @@ namespace Hardware_Shop.Properties {
         internal static System.Drawing.Bitmap Home_Test2 {
             get {
                 object obj = ResourceManager.GetObject("Home_Test2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LawnMower {
+            get {
+                object obj = ResourceManager.GetObject("LawnMower", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -18,15 +18,10 @@ namespace Hardware_Shop
             InitializeComponent();
         }
 
-        //lblForgotPassword click event shows SendCode page
         private void lblForgotPassword_Click(object sender, EventArgs e)
         {
-            SendCode sc = new SendCode();
-
-            //hide LoginPage
             this.Hide();
-
-            //show SendCode page
+            SendCode sc = new SendCode();
             sc.Show();
         }
 
@@ -68,7 +63,7 @@ namespace Hardware_Shop
                 }
                 else
                 {
-                    MessageBox.Show("Wrong password or user User Name");
+                    MessageBox.Show("Wrong password or user ID");
                 }
             }
 
