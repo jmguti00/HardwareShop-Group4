@@ -17,16 +17,19 @@ namespace Hardware_Shop
         {
             InitializeComponent();
 
-            TextReader reader = new StreamReader(@"C:\Users\julia\OneDrive\Desktop\Group4-1\GroupAssignment\Hardware-Shop\Help Document.txt");
+            TextReader reader = new StreamReader(@"C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Help Document.txt");
 
             richTextBox1.Text = reader.ReadToEnd();
 
             reader.Close();
+
+
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
+
             Hardware_Shop hs = new Hardware_Shop();
             hs.Show();
         }

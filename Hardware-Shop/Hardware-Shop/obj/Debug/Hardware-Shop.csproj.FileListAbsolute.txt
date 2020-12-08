@@ -120,3 +120,4 @@ C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Hardware-Shop\obj\Deb
 C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.csproj.CopyComplete
 C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.exe
 C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware-Shop.pdb
+C:\Users\julia\OneDrive\Desktop\Test Program\Hardware-Shop\Hardware-Shop\obj\Debug\Hardware_Shop.HelpForm.resources
