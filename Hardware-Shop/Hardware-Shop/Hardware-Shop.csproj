@@ -96,6 +96,12 @@
     <Compile Include="Hardware-Shop.Designer.cs">
       <DependentUpon>Hardware-Shop.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeRenovations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hardware-Shop.resx">
       <DependentUpon>Hardware-Shop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeRenovations.resx">
       <DependentUpon>HomeRenovations.cs</DependentUpon>

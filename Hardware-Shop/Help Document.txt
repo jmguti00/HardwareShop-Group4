@@ -1,0 +1,128 @@
+                                                               Help Document
+
+	                                         Handy’s Hardware Shop
+
+Blue Text – Refers to a page or page name. (Page names are at the top left-hand side of the page.)
+
+Highlighted Text – Requires password to access.
+
+Bold Text – Buttons.
+
+Andy’s Hardware Store
+
+   •   Customer 
+               o   To begin the order, click the customer which will ask the user for a password and 
+	     username. Which will be used to log in the employee so that the order process 
+	     can begin.
+
+   •   Supervisor 
+	o   This takes you to the employee page which allows you to add, update, and 
+	     remove employees from the application. The user will have to sign in.
+	        Add New Employee – adds employee to database.
+	         •   Click Add New Employee then fill in with the new employee’s 
+	             information. Then click Add to add the new employee to the 
+	             database.
+	        Update Employee – updates the employee’s information, I.e., address...
+	         •   Click Update Employee then enter new employee information, 
+	             then click Enter to complete the update.
+	        Remove Employee – removes employee from database.
+	         •   Select an employee to remove then click Remove Employee to 
+	             remove the employee from the database.
+	        Main Menu – returns to main menu (Andy’s Hardware Store).
+
+   •   Manager 
+	o   Allows the user to add inventory to the database.
+	        Add Picture – Adds picture to selected item.
+	         •   Click Add Picture then select the item to add picture to. Then click 
+                            Enter. Then click Browse to search for image file. Once selected 
+                            image found open. Then click Add Picture to add the image to the 
+                            database.
+	        Add Products – Adds new products to the database inventory.
+	         •   Click Add Products then fill in new product information. 
+		      o   Product Name
+		      o   Product Description
+		      o   Product Quantity
+		      o   Product Price
+	         •   Click Browse to open file explorer to search for image (Not 
+                            required).
+	         •   Click Save Product to add new product to the database.
+	        Update Product – If the user needs to make a change to any of the items 
+	           in the inventory.
+	         •   Select the product row that needs to be updated
+	         •   Click Enter 
+	         •   Fill in any information that needs to be updated
+		      o   Product Name
+		      o   Product Description
+		      o   Product Quantity
+		      o   Product Price
+	         •   Click Browse to open file explorer to search for image (Not required).
+	         •   Click Update to submit the changes to the database.
+	        Refresh – Refreshes the product table to show new updates made.
+	        Main Menu – Returns to the main menu (Andy’s Hardware Store).
+
+Customer Page
+
+   •   From this page the user can add a new customer, search for a customer, and start the 
+       order under one of the customer’s names. The user will have to sign in to access this 
+       information.
+	o   To add a customer, enter all of the new customer’s information, then click the 
+	     Add New Customer button.
+	o   To search for an existing customer, type the customer’s last name then click 
+	     Search.
+	o   To start the order, click to the left-hand side of the customer table to select a 
+                    customer, once the targeted row is selected (highlighted,) click Start Order. 
+	o   Select Main Menu to return to the main menu (Andy’s Hardware Store).
+
+Shop by Department
+
+   •   From this page the user can select any department to begin shopping.
+	o   Tools and Accessories 
+	      Click Add to Cart to add selected item to the cart.
+	      Click View Cart to view items added to the cart.
+	       •   From View Cart select an item to remove, once targeted item is 
+                          highlighted click Delete to remove selected item.
+	       •   From View Cart click Clear to remove all items from cart.
+	       •   From View Cart click close to hide the View Cart page.
+	      Click Return to Departments to return to the Shop by Department page.
+	      Click Check Out to begin check out process.
+	o   Lawn and Garden
+	      Click Add to Cart to add selected item to the cart.
+	      Click View Cart to view items added to the cart.
+	       •   From View Cart select an item to remove, once targeted item is 
+	           highlighted click Delete to remove selected item.
+	       •   From View Cart click Clear to remove all items from cart.
+	       •   From View Cart click close to hide the View Cart page.
+	      Click Return to Departments to return to the Shop by Department page.
+	      Click Check Out to begin check out process.
+	o   Home Renovations
+	      Click Add to Cart to add selected item to the cart.
+	      Click View Cart to view items added to the cart.
+	       •   From View Cart select an item to remove, once targeted item is 
+                          highlighted click Delete to remove selected item.
+	       •   From View Cart click Clear to remove all items from cart.
+	       •   From View Cart click close to hide the View Cart page.
+	      Click Return to Departments to return to the Shop by Department page.
+	      Click Check Out to begin check out process.
+	o   Building and Construction
+	      Click Add to Cart to add selected item to the cart.
+	      Click View Cart to view items added to the cart.
+	       •   From View Cart select an item to remove, once targeted item is 
+                          highlighted click Delete to remove selected item.
+	       •   From View Cart click Clear to remove all items from cart.
+	       •   From View Cart click close to hide the View Cart page.
+	      Click Return to Departments to return to the Shop by Department page.
+	      Click Check Out to begin check out process.
+
+Check Out
+
+   •   From this page the user can submit the order, cancel the order, or return to the Shop by 
+       Departments page to add or remove an item.
+	o   Credit Cart
+	      If the user is paying with credit cart, enter the following information
+	       •   Name on Card:
+	       •   CC Number:
+	       •   Exp. Month
+	       •   Exp. Year
+	       •   CRV Code:
+	o   Check Out – Click Check Out to submit the order. Once the order is completed 
+	     the application will return to the main menu (Andy’s Hardware Store). 

@@ -143,6 +143,7 @@
             this.btnHelp.TabIndex = 5;
             this.btnHelp.Text = "Helpful Info";
             this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // panel1
             // 
