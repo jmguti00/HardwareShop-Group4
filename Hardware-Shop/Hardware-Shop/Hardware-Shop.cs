@@ -101,5 +101,13 @@ namespace Hardware_Shop
 
             lblInfo.Text = contactInfo;
         }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            HelpForm helpForm = new HelpForm();
+            helpForm.Show();
+        }
     }
 }
