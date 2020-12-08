@@ -14,14 +14,14 @@ namespace Hardware_Shop
 {
     public partial class HomeRenovations : Form
     {
-        item Plywood = new item();
-        item Refrigerator = new item();
-        item Stove = new item();
-        item WaterHeater = new item();
-        item Fan = new item();
-        item Paints = new item();
-        item AirConditioner = new item();
-        item Toilet = new item();
+        ToolsAndAccessories.item Plywood = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item Refrigerator = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item Stove = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item WaterHeater = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item Fan = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item Paints = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item AirConditioner = new ToolsAndAccessories.item();
+        ToolsAndAccessories.item Toilet = new ToolsAndAccessories.item();
 
         ViewCart vc = new ViewCart();
         public static float total = 0;
