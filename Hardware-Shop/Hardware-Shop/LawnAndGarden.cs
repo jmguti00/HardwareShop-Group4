@@ -276,10 +276,9 @@ namespace Hardware_Shop
             ToolsAndAccessories.vc.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCheckOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             CheckOutForm checkOut = new CheckOutForm();
             checkOut.Show();
         }

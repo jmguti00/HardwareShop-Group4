@@ -46,7 +46,7 @@
             this.picRideLawnMow = new System.Windows.Forms.PictureBox();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.btnViewCart = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.lblOrderFor = new System.Windows.Forms.Label();
             this.grpPushLawnMow.SuspendLayout();
@@ -76,9 +76,9 @@
             this.grpPushLawnMow.Controls.Add(this.picPushLawnMow);
             this.grpPushLawnMow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpPushLawnMow.Location = new System.Drawing.Point(17, 127);
-            this.grpPushLawnMow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpPushLawnMow.Margin = new System.Windows.Forms.Padding(4);
             this.grpPushLawnMow.Name = "grpPushLawnMow";
-            this.grpPushLawnMow.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpPushLawnMow.Padding = new System.Windows.Forms.Padding(4);
             this.grpPushLawnMow.Size = new System.Drawing.Size(267, 373);
             this.grpPushLawnMow.TabIndex = 1;
             this.grpPushLawnMow.TabStop = false;
@@ -87,7 +87,7 @@
             // btnAddPushLawn
             // 
             this.btnAddPushLawn.Location = new System.Drawing.Point(53, 326);
-            this.btnAddPushLawn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddPushLawn.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddPushLawn.Name = "btnAddPushLawn";
             this.btnAddPushLawn.Size = new System.Drawing.Size(148, 39);
             this.btnAddPushLawn.TabIndex = 7;
@@ -116,7 +116,7 @@
             // picPushLawnMow
             // 
             this.picPushLawnMow.Location = new System.Drawing.Point(8, 31);
-            this.picPushLawnMow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picPushLawnMow.Margin = new System.Windows.Forms.Padding(4);
             this.picPushLawnMow.Name = "picPushLawnMow";
             this.picPushLawnMow.Size = new System.Drawing.Size(249, 154);
             this.picPushLawnMow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,9 +131,9 @@
             this.grpSoil.Controls.Add(this.picSoil);
             this.grpSoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSoil.Location = new System.Drawing.Point(672, 127);
-            this.grpSoil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpSoil.Margin = new System.Windows.Forms.Padding(4);
             this.grpSoil.Name = "grpSoil";
-            this.grpSoil.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpSoil.Padding = new System.Windows.Forms.Padding(4);
             this.grpSoil.Size = new System.Drawing.Size(267, 373);
             this.grpSoil.TabIndex = 0;
             this.grpSoil.TabStop = false;
@@ -142,7 +142,7 @@
             // btnAddSoil
             // 
             this.btnAddSoil.Location = new System.Drawing.Point(53, 326);
-            this.btnAddSoil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddSoil.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddSoil.Name = "btnAddSoil";
             this.btnAddSoil.Size = new System.Drawing.Size(148, 39);
             this.btnAddSoil.TabIndex = 9;
@@ -171,7 +171,7 @@
             // picSoil
             // 
             this.picSoil.Location = new System.Drawing.Point(9, 31);
-            this.picSoil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picSoil.Margin = new System.Windows.Forms.Padding(4);
             this.picSoil.Name = "picSoil";
             this.picSoil.Size = new System.Drawing.Size(249, 154);
             this.picSoil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,9 +186,9 @@
             this.grpRideLawnMow.Controls.Add(this.picRideLawnMow);
             this.grpRideLawnMow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpRideLawnMow.Location = new System.Drawing.Point(340, 127);
-            this.grpRideLawnMow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpRideLawnMow.Margin = new System.Windows.Forms.Padding(4);
             this.grpRideLawnMow.Name = "grpRideLawnMow";
-            this.grpRideLawnMow.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpRideLawnMow.Padding = new System.Windows.Forms.Padding(4);
             this.grpRideLawnMow.Size = new System.Drawing.Size(267, 373);
             this.grpRideLawnMow.TabIndex = 0;
             this.grpRideLawnMow.TabStop = false;
@@ -197,7 +197,7 @@
             // btnAddRideLawn
             // 
             this.btnAddRideLawn.Location = new System.Drawing.Point(53, 326);
-            this.btnAddRideLawn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddRideLawn.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddRideLawn.Name = "btnAddRideLawn";
             this.btnAddRideLawn.Size = new System.Drawing.Size(148, 39);
             this.btnAddRideLawn.TabIndex = 8;
@@ -226,7 +226,7 @@
             // picRideLawnMow
             // 
             this.picRideLawnMow.Location = new System.Drawing.Point(8, 31);
-            this.picRideLawnMow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picRideLawnMow.Margin = new System.Windows.Forms.Padding(4);
             this.picRideLawnMow.Name = "picRideLawnMow";
             this.picRideLawnMow.Size = new System.Drawing.Size(249, 154);
             this.picRideLawnMow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,7 +237,7 @@
             // 
             this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMainMenu.Location = new System.Drawing.Point(492, 25);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMainMenu.Name = "btnMainMenu";
             this.btnMainMenu.Size = new System.Drawing.Size(123, 39);
             this.btnMainMenu.TabIndex = 10;
@@ -250,7 +250,7 @@
             this.btnViewCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnViewCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewCart.Location = new System.Drawing.Point(816, 25);
-            this.btnViewCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewCart.Margin = new System.Windows.Forms.Padding(4);
             this.btnViewCart.Name = "btnViewCart";
             this.btnViewCart.Size = new System.Drawing.Size(123, 39);
             this.btnViewCart.TabIndex = 11;
@@ -258,17 +258,17 @@
             this.btnViewCart.UseVisualStyleBackColor = false;
             this.btnViewCart.Click += new System.EventHandler(this.btnViewCart_Click);
             // 
-            // button1
+            // btnCheckOut
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(656, 25);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 39);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "&Check Out";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(656, 25);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(123, 39);
+            this.btnCheckOut.TabIndex = 12;
+            this.btnCheckOut.Text = "&Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // label2
             // 
@@ -295,14 +295,14 @@
             this.ClientSize = new System.Drawing.Size(983, 635);
             this.Controls.Add(this.lblOrderFor);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCheckOut);
             this.Controls.Add(this.btnViewCart);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.grpSoil);
             this.Controls.Add(this.grpRideLawnMow);
             this.Controls.Add(this.grpPushLawnMow);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LawnAndGarden";
             this.Text = "LawnAndGarden";
             this.Load += new System.EventHandler(this.LawnAndGarden_Load);
@@ -337,7 +337,7 @@
         private System.Windows.Forms.Button btnAddSoil;
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Button btnViewCart;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblOrderFor;
     }
