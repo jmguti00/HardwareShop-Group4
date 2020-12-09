@@ -68,10 +68,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(519, 52);
+            this.label1.Size = new System.Drawing.Size(411, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Building and Construction";
             // 
@@ -82,21 +82,20 @@
             this.grpCementMixer.Controls.Add(this.lblCementDesc);
             this.grpCementMixer.Controls.Add(this.picCementMixer);
             this.grpCementMixer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCementMixer.Location = new System.Drawing.Point(91, 117);
-            this.grpCementMixer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpCementMixer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpCementMixer.Location = new System.Drawing.Point(68, 95);
             this.grpCementMixer.Name = "grpCementMixer";
-            this.grpCementMixer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpCementMixer.Size = new System.Drawing.Size(267, 373);
+            this.grpCementMixer.Size = new System.Drawing.Size(200, 303);
             this.grpCementMixer.TabIndex = 1;
             this.grpCementMixer.TabStop = false;
             this.grpCementMixer.Text = "Cement Mixer";
             // 
             // btnAddCement
             // 
-            this.btnAddCement.Location = new System.Drawing.Point(53, 326);
-            this.btnAddCement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddCement.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddCement.Location = new System.Drawing.Point(40, 265);
             this.btnAddCement.Name = "btnAddCement";
-            this.btnAddCement.Size = new System.Drawing.Size(148, 39);
+            this.btnAddCement.Size = new System.Drawing.Size(111, 32);
             this.btnAddCement.TabIndex = 13;
             this.btnAddCement.Text = "Add to Cart";
             this.btnAddCement.UseVisualStyleBackColor = true;
@@ -105,27 +104,24 @@
             // lblPriceCement
             // 
             this.lblPriceCement.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceCement.Location = new System.Drawing.Point(8, 284);
-            this.lblPriceCement.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceCement.Location = new System.Drawing.Point(6, 231);
             this.lblPriceCement.Name = "lblPriceCement";
-            this.lblPriceCement.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceCement.Size = new System.Drawing.Size(100, 27);
             this.lblPriceCement.TabIndex = 9;
             // 
             // lblCementDesc
             // 
             this.lblCementDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCementDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblCementDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCementDesc.Location = new System.Drawing.Point(6, 154);
             this.lblCementDesc.Name = "lblCementDesc";
-            this.lblCementDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblCementDesc.Size = new System.Drawing.Size(188, 68);
             this.lblCementDesc.TabIndex = 5;
             // 
             // picCementMixer
             // 
-            this.picCementMixer.Location = new System.Drawing.Point(9, 32);
-            this.picCementMixer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picCementMixer.Location = new System.Drawing.Point(7, 26);
             this.picCementMixer.Name = "picCementMixer";
-            this.picCementMixer.Size = new System.Drawing.Size(249, 154);
+            this.picCementMixer.Size = new System.Drawing.Size(187, 125);
             this.picCementMixer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCementMixer.TabIndex = 0;
             this.picCementMixer.TabStop = false;
@@ -137,21 +133,20 @@
             this.grpDemoHammer.Controls.Add(this.lblDemoHammerDesc);
             this.grpDemoHammer.Controls.Add(this.picDemoHammer);
             this.grpDemoHammer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpDemoHammer.Location = new System.Drawing.Point(379, 117);
-            this.grpDemoHammer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpDemoHammer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpDemoHammer.Location = new System.Drawing.Point(284, 95);
             this.grpDemoHammer.Name = "grpDemoHammer";
-            this.grpDemoHammer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpDemoHammer.Size = new System.Drawing.Size(267, 373);
+            this.grpDemoHammer.Size = new System.Drawing.Size(200, 303);
             this.grpDemoHammer.TabIndex = 2;
             this.grpDemoHammer.TabStop = false;
             this.grpDemoHammer.Text = "Demolition Hammer";
             // 
             // btnAddDemo
             // 
-            this.btnAddDemo.Location = new System.Drawing.Point(57, 326);
-            this.btnAddDemo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddDemo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddDemo.Location = new System.Drawing.Point(43, 265);
             this.btnAddDemo.Name = "btnAddDemo";
-            this.btnAddDemo.Size = new System.Drawing.Size(148, 39);
+            this.btnAddDemo.Size = new System.Drawing.Size(111, 32);
             this.btnAddDemo.TabIndex = 14;
             this.btnAddDemo.Text = "Add to Cart";
             this.btnAddDemo.UseVisualStyleBackColor = true;
@@ -160,27 +155,24 @@
             // lblPriceDemo
             // 
             this.lblPriceDemo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceDemo.Location = new System.Drawing.Point(9, 284);
-            this.lblPriceDemo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceDemo.Location = new System.Drawing.Point(7, 231);
             this.lblPriceDemo.Name = "lblPriceDemo";
-            this.lblPriceDemo.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceDemo.Size = new System.Drawing.Size(100, 27);
             this.lblPriceDemo.TabIndex = 10;
             // 
             // lblDemoHammerDesc
             // 
             this.lblDemoHammerDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDemoHammerDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblDemoHammerDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDemoHammerDesc.Location = new System.Drawing.Point(6, 154);
             this.lblDemoHammerDesc.Name = "lblDemoHammerDesc";
-            this.lblDemoHammerDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblDemoHammerDesc.Size = new System.Drawing.Size(188, 68);
             this.lblDemoHammerDesc.TabIndex = 6;
             // 
             // picDemoHammer
             // 
-            this.picDemoHammer.Location = new System.Drawing.Point(9, 32);
-            this.picDemoHammer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picDemoHammer.Location = new System.Drawing.Point(7, 26);
             this.picDemoHammer.Name = "picDemoHammer";
-            this.picDemoHammer.Size = new System.Drawing.Size(249, 154);
+            this.picDemoHammer.Size = new System.Drawing.Size(187, 125);
             this.picDemoHammer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picDemoHammer.TabIndex = 1;
             this.picDemoHammer.TabStop = false;
@@ -192,21 +184,20 @@
             this.grpLight.Controls.Add(this.lblWorkLightDesc);
             this.grpLight.Controls.Add(this.picWorksiteLight);
             this.grpLight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpLight.Location = new System.Drawing.Point(683, 117);
-            this.grpLight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpLight.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpLight.Location = new System.Drawing.Point(512, 95);
             this.grpLight.Name = "grpLight";
-            this.grpLight.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpLight.Size = new System.Drawing.Size(267, 373);
+            this.grpLight.Size = new System.Drawing.Size(200, 303);
             this.grpLight.TabIndex = 3;
             this.grpLight.TabStop = false;
             this.grpLight.Text = "Worksite Lighting";
             // 
             // btnAddWorkLight
             // 
-            this.btnAddWorkLight.Location = new System.Drawing.Point(63, 326);
-            this.btnAddWorkLight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddWorkLight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddWorkLight.Location = new System.Drawing.Point(47, 265);
             this.btnAddWorkLight.Name = "btnAddWorkLight";
-            this.btnAddWorkLight.Size = new System.Drawing.Size(148, 39);
+            this.btnAddWorkLight.Size = new System.Drawing.Size(111, 32);
             this.btnAddWorkLight.TabIndex = 15;
             this.btnAddWorkLight.Text = "Add to Cart";
             this.btnAddWorkLight.UseVisualStyleBackColor = true;
@@ -215,27 +206,24 @@
             // lblPriceWorkLight
             // 
             this.lblPriceWorkLight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceWorkLight.Location = new System.Drawing.Point(9, 284);
-            this.lblPriceWorkLight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceWorkLight.Location = new System.Drawing.Point(7, 231);
             this.lblPriceWorkLight.Name = "lblPriceWorkLight";
-            this.lblPriceWorkLight.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceWorkLight.Size = new System.Drawing.Size(100, 27);
             this.lblPriceWorkLight.TabIndex = 11;
             // 
             // lblWorkLightDesc
             // 
             this.lblWorkLightDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblWorkLightDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblWorkLightDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblWorkLightDesc.Location = new System.Drawing.Point(6, 154);
             this.lblWorkLightDesc.Name = "lblWorkLightDesc";
-            this.lblWorkLightDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblWorkLightDesc.Size = new System.Drawing.Size(188, 68);
             this.lblWorkLightDesc.TabIndex = 7;
             // 
             // picWorksiteLight
             // 
-            this.picWorksiteLight.Location = new System.Drawing.Point(9, 32);
-            this.picWorksiteLight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picWorksiteLight.Location = new System.Drawing.Point(7, 26);
             this.picWorksiteLight.Name = "picWorksiteLight";
-            this.picWorksiteLight.Size = new System.Drawing.Size(249, 154);
+            this.picWorksiteLight.Size = new System.Drawing.Size(187, 125);
             this.picWorksiteLight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picWorksiteLight.TabIndex = 2;
             this.picWorksiteLight.TabStop = false;
@@ -247,21 +235,20 @@
             this.grpMeasuringTape.Controls.Add(this.lblMeasuringTapeDesc);
             this.grpMeasuringTape.Controls.Add(this.picMeasuringTape);
             this.grpMeasuringTape.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpMeasuringTape.Location = new System.Drawing.Point(88, 498);
-            this.grpMeasuringTape.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpMeasuringTape.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.grpMeasuringTape.Location = new System.Drawing.Point(66, 405);
             this.grpMeasuringTape.Name = "grpMeasuringTape";
-            this.grpMeasuringTape.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.grpMeasuringTape.Size = new System.Drawing.Size(267, 373);
+            this.grpMeasuringTape.Size = new System.Drawing.Size(200, 303);
             this.grpMeasuringTape.TabIndex = 4;
             this.grpMeasuringTape.TabStop = false;
             this.grpMeasuringTape.Text = "Measuring Tape";
             // 
             // btnAddMeasuring
             // 
-            this.btnAddMeasuring.Location = new System.Drawing.Point(53, 326);
-            this.btnAddMeasuring.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddMeasuring.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAddMeasuring.Location = new System.Drawing.Point(40, 265);
             this.btnAddMeasuring.Name = "btnAddMeasuring";
-            this.btnAddMeasuring.Size = new System.Drawing.Size(148, 39);
+            this.btnAddMeasuring.Size = new System.Drawing.Size(111, 32);
             this.btnAddMeasuring.TabIndex = 16;
             this.btnAddMeasuring.Text = "Add to Cart";
             this.btnAddMeasuring.UseVisualStyleBackColor = true;
@@ -270,27 +257,24 @@
             // lblPriceMeasuring
             // 
             this.lblPriceMeasuring.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceMeasuring.Location = new System.Drawing.Point(9, 284);
-            this.lblPriceMeasuring.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceMeasuring.Location = new System.Drawing.Point(7, 231);
             this.lblPriceMeasuring.Name = "lblPriceMeasuring";
-            this.lblPriceMeasuring.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceMeasuring.Size = new System.Drawing.Size(100, 27);
             this.lblPriceMeasuring.TabIndex = 12;
             // 
             // lblMeasuringTapeDesc
             // 
             this.lblMeasuringTapeDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMeasuringTapeDesc.Location = new System.Drawing.Point(9, 188);
-            this.lblMeasuringTapeDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMeasuringTapeDesc.Location = new System.Drawing.Point(7, 153);
             this.lblMeasuringTapeDesc.Name = "lblMeasuringTapeDesc";
-            this.lblMeasuringTapeDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblMeasuringTapeDesc.Size = new System.Drawing.Size(188, 68);
             this.lblMeasuringTapeDesc.TabIndex = 8;
             // 
             // picMeasuringTape
             // 
-            this.picMeasuringTape.Location = new System.Drawing.Point(9, 31);
-            this.picMeasuringTape.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picMeasuringTape.Location = new System.Drawing.Point(7, 25);
             this.picMeasuringTape.Name = "picMeasuringTape";
-            this.picMeasuringTape.Size = new System.Drawing.Size(249, 154);
+            this.picMeasuringTape.Size = new System.Drawing.Size(187, 125);
             this.picMeasuringTape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMeasuringTape.TabIndex = 3;
             this.picMeasuringTape.TabStop = false;
@@ -298,10 +282,10 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainMenu.Location = new System.Drawing.Point(554, 28);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMainMenu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMainMenu.Location = new System.Drawing.Point(416, 23);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(123, 39);
+            this.btnMainMenu.Size = new System.Drawing.Size(92, 32);
             this.btnMainMenu.TabIndex = 15;
             this.btnMainMenu.Text = "&Departments";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -311,10 +295,10 @@
             // 
             this.btnViewCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnViewCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCart.Location = new System.Drawing.Point(838, 28);
-            this.btnViewCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewCart.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnViewCart.Location = new System.Drawing.Point(628, 23);
             this.btnViewCart.Name = "btnViewCart";
-            this.btnViewCart.Size = new System.Drawing.Size(123, 39);
+            this.btnViewCart.Size = new System.Drawing.Size(92, 32);
             this.btnViewCart.TabIndex = 16;
             this.btnViewCart.Text = "&View Cart";
             this.btnViewCart.UseVisualStyleBackColor = false;
@@ -323,10 +307,10 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.Location = new System.Drawing.Point(702, 28);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCheckOut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnCheckOut.Location = new System.Drawing.Point(526, 23);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(123, 39);
+            this.btnCheckOut.Size = new System.Drawing.Size(92, 32);
             this.btnCheckOut.TabIndex = 17;
             this.btnCheckOut.Text = "&Check Out";
             this.btnCheckOut.UseVisualStyleBackColor = true;
@@ -336,26 +320,31 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(86, 76);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(64, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 18;
             this.label2.Text = "Order for:";
             // 
             // lblOrderFor
             // 
             this.lblOrderFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderFor.Location = new System.Drawing.Point(197, 76);
+            this.lblOrderFor.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblOrderFor.Location = new System.Drawing.Point(148, 62);
+            this.lblOrderFor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrderFor.Name = "lblOrderFor";
-            this.lblOrderFor.Size = new System.Drawing.Size(235, 25);
+            this.lblOrderFor.Size = new System.Drawing.Size(275, 20);
             this.lblOrderFor.TabIndex = 19;
             // 
             // BuildingAndConstuction
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1059, 789);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(794, 641);
             this.Controls.Add(this.lblOrderFor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCheckOut);
@@ -366,7 +355,7 @@
             this.Controls.Add(this.grpDemoHammer);
             this.Controls.Add(this.grpCementMixer);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "BuildingAndConstuction";
             this.Text = "BuildingAndConstuction";
             this.Load += new System.EventHandler(this.BuildingAndConstuction_Load);

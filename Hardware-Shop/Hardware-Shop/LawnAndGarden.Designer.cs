@@ -61,10 +61,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 52);
+            this.label1.Size = new System.Drawing.Size(293, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lawn And Garden";
             // 
@@ -75,21 +75,20 @@
             this.grpPushLawnMow.Controls.Add(this.lblPushLawnDesc);
             this.grpPushLawnMow.Controls.Add(this.picPushLawnMow);
             this.grpPushLawnMow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPushLawnMow.Location = new System.Drawing.Point(17, 127);
-            this.grpPushLawnMow.Margin = new System.Windows.Forms.Padding(4);
+            this.grpPushLawnMow.ForeColor = System.Drawing.SystemColors.Control;
+            this.grpPushLawnMow.Location = new System.Drawing.Point(13, 103);
             this.grpPushLawnMow.Name = "grpPushLawnMow";
-            this.grpPushLawnMow.Padding = new System.Windows.Forms.Padding(4);
-            this.grpPushLawnMow.Size = new System.Drawing.Size(267, 373);
+            this.grpPushLawnMow.Size = new System.Drawing.Size(200, 303);
             this.grpPushLawnMow.TabIndex = 1;
             this.grpPushLawnMow.TabStop = false;
             this.grpPushLawnMow.Text = "Push Lawn Mower";
             // 
             // btnAddPushLawn
             // 
-            this.btnAddPushLawn.Location = new System.Drawing.Point(53, 326);
-            this.btnAddPushLawn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddPushLawn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddPushLawn.Location = new System.Drawing.Point(40, 265);
             this.btnAddPushLawn.Name = "btnAddPushLawn";
-            this.btnAddPushLawn.Size = new System.Drawing.Size(148, 39);
+            this.btnAddPushLawn.Size = new System.Drawing.Size(111, 32);
             this.btnAddPushLawn.TabIndex = 7;
             this.btnAddPushLawn.Text = "Add to Cart";
             this.btnAddPushLawn.UseVisualStyleBackColor = true;
@@ -98,27 +97,24 @@
             // lblPricePushLawn
             // 
             this.lblPricePushLawn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPricePushLawn.Location = new System.Drawing.Point(8, 284);
-            this.lblPricePushLawn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPricePushLawn.Location = new System.Drawing.Point(6, 231);
             this.lblPricePushLawn.Name = "lblPricePushLawn";
-            this.lblPricePushLawn.Size = new System.Drawing.Size(133, 33);
+            this.lblPricePushLawn.Size = new System.Drawing.Size(100, 27);
             this.lblPricePushLawn.TabIndex = 4;
             // 
             // lblPushLawnDesc
             // 
             this.lblPushLawnDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPushLawnDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblPushLawnDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPushLawnDesc.Location = new System.Drawing.Point(6, 154);
             this.lblPushLawnDesc.Name = "lblPushLawnDesc";
-            this.lblPushLawnDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblPushLawnDesc.Size = new System.Drawing.Size(188, 68);
             this.lblPushLawnDesc.TabIndex = 3;
             // 
             // picPushLawnMow
             // 
-            this.picPushLawnMow.Location = new System.Drawing.Point(8, 31);
-            this.picPushLawnMow.Margin = new System.Windows.Forms.Padding(4);
+            this.picPushLawnMow.Location = new System.Drawing.Point(6, 25);
             this.picPushLawnMow.Name = "picPushLawnMow";
-            this.picPushLawnMow.Size = new System.Drawing.Size(249, 154);
+            this.picPushLawnMow.Size = new System.Drawing.Size(187, 125);
             this.picPushLawnMow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPushLawnMow.TabIndex = 0;
             this.picPushLawnMow.TabStop = false;
@@ -130,21 +126,20 @@
             this.grpSoil.Controls.Add(this.lblSoilDesc);
             this.grpSoil.Controls.Add(this.picSoil);
             this.grpSoil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpSoil.Location = new System.Drawing.Point(672, 127);
-            this.grpSoil.Margin = new System.Windows.Forms.Padding(4);
+            this.grpSoil.ForeColor = System.Drawing.SystemColors.Control;
+            this.grpSoil.Location = new System.Drawing.Point(504, 103);
             this.grpSoil.Name = "grpSoil";
-            this.grpSoil.Padding = new System.Windows.Forms.Padding(4);
-            this.grpSoil.Size = new System.Drawing.Size(267, 373);
+            this.grpSoil.Size = new System.Drawing.Size(200, 303);
             this.grpSoil.TabIndex = 0;
             this.grpSoil.TabStop = false;
             this.grpSoil.Text = "Soil";
             // 
             // btnAddSoil
             // 
-            this.btnAddSoil.Location = new System.Drawing.Point(53, 326);
-            this.btnAddSoil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddSoil.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddSoil.Location = new System.Drawing.Point(40, 265);
             this.btnAddSoil.Name = "btnAddSoil";
-            this.btnAddSoil.Size = new System.Drawing.Size(148, 39);
+            this.btnAddSoil.Size = new System.Drawing.Size(111, 32);
             this.btnAddSoil.TabIndex = 9;
             this.btnAddSoil.Text = "Add to Cart";
             this.btnAddSoil.UseVisualStyleBackColor = true;
@@ -153,27 +148,24 @@
             // lblPriceSoil
             // 
             this.lblPriceSoil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceSoil.Location = new System.Drawing.Point(9, 284);
-            this.lblPriceSoil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceSoil.Location = new System.Drawing.Point(7, 231);
             this.lblPriceSoil.Name = "lblPriceSoil";
-            this.lblPriceSoil.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceSoil.Size = new System.Drawing.Size(100, 27);
             this.lblPriceSoil.TabIndex = 6;
             // 
             // lblSoilDesc
             // 
             this.lblSoilDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblSoilDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblSoilDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSoilDesc.Location = new System.Drawing.Point(6, 154);
             this.lblSoilDesc.Name = "lblSoilDesc";
-            this.lblSoilDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblSoilDesc.Size = new System.Drawing.Size(188, 68);
             this.lblSoilDesc.TabIndex = 5;
             // 
             // picSoil
             // 
-            this.picSoil.Location = new System.Drawing.Point(9, 31);
-            this.picSoil.Margin = new System.Windows.Forms.Padding(4);
+            this.picSoil.Location = new System.Drawing.Point(7, 25);
             this.picSoil.Name = "picSoil";
-            this.picSoil.Size = new System.Drawing.Size(249, 154);
+            this.picSoil.Size = new System.Drawing.Size(187, 125);
             this.picSoil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSoil.TabIndex = 2;
             this.picSoil.TabStop = false;
@@ -185,21 +177,20 @@
             this.grpRideLawnMow.Controls.Add(this.lblRideLawnDesc);
             this.grpRideLawnMow.Controls.Add(this.picRideLawnMow);
             this.grpRideLawnMow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpRideLawnMow.Location = new System.Drawing.Point(340, 127);
-            this.grpRideLawnMow.Margin = new System.Windows.Forms.Padding(4);
+            this.grpRideLawnMow.ForeColor = System.Drawing.SystemColors.Control;
+            this.grpRideLawnMow.Location = new System.Drawing.Point(255, 103);
             this.grpRideLawnMow.Name = "grpRideLawnMow";
-            this.grpRideLawnMow.Padding = new System.Windows.Forms.Padding(4);
-            this.grpRideLawnMow.Size = new System.Drawing.Size(267, 373);
+            this.grpRideLawnMow.Size = new System.Drawing.Size(200, 303);
             this.grpRideLawnMow.TabIndex = 0;
             this.grpRideLawnMow.TabStop = false;
             this.grpRideLawnMow.Text = "Ride Lawn Mowers";
             // 
             // btnAddRideLawn
             // 
-            this.btnAddRideLawn.Location = new System.Drawing.Point(53, 326);
-            this.btnAddRideLawn.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddRideLawn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddRideLawn.Location = new System.Drawing.Point(40, 265);
             this.btnAddRideLawn.Name = "btnAddRideLawn";
-            this.btnAddRideLawn.Size = new System.Drawing.Size(148, 39);
+            this.btnAddRideLawn.Size = new System.Drawing.Size(111, 32);
             this.btnAddRideLawn.TabIndex = 8;
             this.btnAddRideLawn.Text = "Add to Cart";
             this.btnAddRideLawn.UseVisualStyleBackColor = true;
@@ -208,27 +199,24 @@
             // lblPriceRideLawn
             // 
             this.lblPriceRideLawn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblPriceRideLawn.Location = new System.Drawing.Point(8, 284);
-            this.lblPriceRideLawn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPriceRideLawn.Location = new System.Drawing.Point(6, 231);
             this.lblPriceRideLawn.Name = "lblPriceRideLawn";
-            this.lblPriceRideLawn.Size = new System.Drawing.Size(133, 33);
+            this.lblPriceRideLawn.Size = new System.Drawing.Size(100, 27);
             this.lblPriceRideLawn.TabIndex = 5;
             // 
             // lblRideLawnDesc
             // 
             this.lblRideLawnDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblRideLawnDesc.Location = new System.Drawing.Point(8, 190);
-            this.lblRideLawnDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRideLawnDesc.Location = new System.Drawing.Point(6, 154);
             this.lblRideLawnDesc.Name = "lblRideLawnDesc";
-            this.lblRideLawnDesc.Size = new System.Drawing.Size(250, 83);
+            this.lblRideLawnDesc.Size = new System.Drawing.Size(188, 68);
             this.lblRideLawnDesc.TabIndex = 4;
             // 
             // picRideLawnMow
             // 
-            this.picRideLawnMow.Location = new System.Drawing.Point(8, 31);
-            this.picRideLawnMow.Margin = new System.Windows.Forms.Padding(4);
+            this.picRideLawnMow.Location = new System.Drawing.Point(6, 25);
             this.picRideLawnMow.Name = "picRideLawnMow";
-            this.picRideLawnMow.Size = new System.Drawing.Size(249, 154);
+            this.picRideLawnMow.Size = new System.Drawing.Size(187, 125);
             this.picRideLawnMow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRideLawnMow.TabIndex = 1;
             this.picRideLawnMow.TabStop = false;
@@ -236,10 +224,9 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainMenu.Location = new System.Drawing.Point(492, 25);
-            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMainMenu.Location = new System.Drawing.Point(369, 20);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(123, 39);
+            this.btnMainMenu.Size = new System.Drawing.Size(92, 32);
             this.btnMainMenu.TabIndex = 10;
             this.btnMainMenu.Text = "&Departments";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -249,10 +236,9 @@
             // 
             this.btnViewCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnViewCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewCart.Location = new System.Drawing.Point(816, 25);
-            this.btnViewCart.Margin = new System.Windows.Forms.Padding(4);
+            this.btnViewCart.Location = new System.Drawing.Point(612, 20);
             this.btnViewCart.Name = "btnViewCart";
-            this.btnViewCart.Size = new System.Drawing.Size(123, 39);
+            this.btnViewCart.Size = new System.Drawing.Size(92, 32);
             this.btnViewCart.TabIndex = 11;
             this.btnViewCart.Text = "&View Cart";
             this.btnViewCart.UseVisualStyleBackColor = false;
@@ -261,10 +247,9 @@
             // btnCheckOut
             // 
             this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckOut.Location = new System.Drawing.Point(656, 25);
-            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCheckOut.Location = new System.Drawing.Point(492, 20);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(123, 39);
+            this.btnCheckOut.Size = new System.Drawing.Size(92, 32);
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "&Check Out";
             this.btnCheckOut.UseVisualStyleBackColor = true;
@@ -274,25 +259,30 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 81);
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(16, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 25);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "Order for:";
             // 
             // lblOrderFor
             // 
             this.lblOrderFor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrderFor.Location = new System.Drawing.Point(134, 81);
+            this.lblOrderFor.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblOrderFor.Location = new System.Drawing.Point(100, 66);
+            this.lblOrderFor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrderFor.Name = "lblOrderFor";
-            this.lblOrderFor.Size = new System.Drawing.Size(215, 25);
+            this.lblOrderFor.Size = new System.Drawing.Size(261, 20);
             this.lblOrderFor.TabIndex = 14;
             // 
             // LawnAndGarden
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 635);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(737, 516);
             this.Controls.Add(this.lblOrderFor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCheckOut);
@@ -302,7 +292,6 @@
             this.Controls.Add(this.grpRideLawnMow);
             this.Controls.Add(this.grpPushLawnMow);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LawnAndGarden";
             this.Text = "LawnAndGarden";
             this.Load += new System.EventHandler(this.LawnAndGarden_Load);

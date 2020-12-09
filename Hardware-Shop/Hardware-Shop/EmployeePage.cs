@@ -52,10 +52,12 @@ namespace Hardware_Shop
             btnUpdate.Visible = false;
             lblUpdateInfo.Visible = false;
             btnAdd.Visible = true;
+            btnAdd.ForeColor = System.Drawing.Color.Black;
             btnDelete.Visible = false;
             btnEnterDelete.Visible = false;
             lblUpdateInfo.Visible = false;
             lblUpdateInfo.Visible = false;
+
 
             enableFields();
         }
@@ -113,6 +115,7 @@ namespace Hardware_Shop
         private void btnUpdateEmployee_Click(object sender, EventArgs e)
         {
             grpbxAddUpdateEmployee.Visible = true;
+            btnEnter.ForeColor = System.Drawing.Color.Black;
 
             btnUpdate.Visible = false;
             btnAdd.Visible = false;
@@ -324,5 +327,6 @@ namespace Hardware_Shop
             txtNewState.Text = "";
             txtNewZip.Text = "";
         }
+
     }
 }

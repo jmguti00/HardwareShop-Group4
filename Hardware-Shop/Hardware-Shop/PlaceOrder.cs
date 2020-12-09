@@ -58,5 +58,13 @@ namespace Hardware_Shop
             CustomerPage cp = new CustomerPage();
             cp.Show();
         }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CheckOutForm co = new CheckOutForm();
+            co.Show();
+            ToolsAndAccessories.vc.Hide();
+        }
     }
 }

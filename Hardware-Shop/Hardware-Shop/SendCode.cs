@@ -55,6 +55,40 @@ namespace Hardware_Shop
                     MessageBox.Show(ex.Message);
                 }
             }
+            else if(txtEmail.Text == "jaykanin@gmail.com")
+            {
+                string from1, pass1, messageBody1;
+                Random rand1 = new Random();
+                randomCode = (rand1.Next(999999)).ToString();
+                MailMessage message1 = new MailMessage();
+                to = (txtEmail.Text).ToString();
+                from1 = "jaykanin@gmail.com";
+                pass1 = "udberugbgkluqaek";
+                messageBody1 = "Your reset code is " + randomCode;
+                message1.To.Add(to);
+                message1.From = new MailAddress(from1);
+                message1.Body = messageBody1;
+                message1.Subject = "Password reseting code";
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential(from1, pass1);
+
+                try
+                {
+                    smtp.Send(message1);
+                    MessageBox.Show("Code send successfully");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Email is not in our files.");
+            }
 
         }
 
@@ -73,6 +107,13 @@ namespace Hardware_Shop
             {
                 MessageBox.Show("Wrong Code!");
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginPage lp = new LoginPage();
+            lp.Show();
         }
     }
 }

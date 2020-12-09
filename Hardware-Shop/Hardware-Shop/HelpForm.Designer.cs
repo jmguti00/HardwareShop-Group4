@@ -35,9 +35,11 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainMenu.Location = new System.Drawing.Point(418, 12);
+            this.btnMainMenu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMainMenu.Location = new System.Drawing.Point(302, 475);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(151, 45);
+            this.btnMainMenu.Size = new System.Drawing.Size(113, 37);
             this.btnMainMenu.TabIndex = 0;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -45,20 +47,25 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.Cornsilk;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(12, 73);
+            this.richTextBox1.Location = new System.Drawing.Point(9, 11);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(927, 532);
+            this.richTextBox1.Size = new System.Drawing.Size(696, 449);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // HelpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 644);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(716, 523);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnMainMenu);
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HelpForm";
             this.Text = "HelpForm";
             this.ResumeLayout(false);

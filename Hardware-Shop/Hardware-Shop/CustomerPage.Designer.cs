@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.grpboxCustomer = new System.Windows.Forms.GroupBox();
@@ -62,18 +63,21 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(233, 88);
+            this.txtLastName.Location = new System.Drawing.Point(175, 72);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(190, 30);
+            this.txtLastName.Size = new System.Drawing.Size(144, 26);
             this.txtLastName.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 93);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(24, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 25);
+            this.label1.Size = new System.Drawing.Size(149, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter Last Name:";
             // 
@@ -84,9 +88,12 @@
             this.grpboxCustomer.Controls.Add(this.txtLastName);
             this.grpboxCustomer.Controls.Add(this.label1);
             this.grpboxCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpboxCustomer.Location = new System.Drawing.Point(27, 329);
+            this.grpboxCustomer.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.grpboxCustomer.Location = new System.Drawing.Point(20, 267);
+            this.grpboxCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpboxCustomer.Name = "grpboxCustomer";
-            this.grpboxCustomer.Size = new System.Drawing.Size(1469, 417);
+            this.grpboxCustomer.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpboxCustomer.Size = new System.Drawing.Size(1102, 339);
             this.grpboxCustomer.TabIndex = 2;
             this.grpboxCustomer.TabStop = false;
             this.grpboxCustomer.Text = "Customer Info";
@@ -95,27 +102,40 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 44);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(24, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(320, 25);
+            this.label2.Size = new System.Drawing.Size(265, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Search customers by last name.";
             // 
             // customerTable
             // 
             this.customerTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customerTable.Location = new System.Drawing.Point(30, 124);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.customerTable.DefaultCellStyle = dataGridViewCellStyle1;
+            this.customerTable.Location = new System.Drawing.Point(22, 101);
+            this.customerTable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.customerTable.Name = "customerTable";
             this.customerTable.RowTemplate.Height = 24;
-            this.customerTable.Size = new System.Drawing.Size(1410, 287);
+            this.customerTable.Size = new System.Drawing.Size(1058, 233);
             this.customerTable.TabIndex = 3;
             // 
             // btnAddNewCustomer
             // 
             this.btnAddNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNewCustomer.Location = new System.Drawing.Point(22, 162);
+            this.btnAddNewCustomer.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAddNewCustomer.Location = new System.Drawing.Point(16, 132);
+            this.btnAddNewCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddNewCustomer.Name = "btnAddNewCustomer";
-            this.btnAddNewCustomer.Size = new System.Drawing.Size(224, 47);
+            this.btnAddNewCustomer.Size = new System.Drawing.Size(190, 38);
             this.btnAddNewCustomer.TabIndex = 3;
             this.btnAddNewCustomer.Text = "Add New Customer";
             this.btnAddNewCustomer.UseVisualStyleBackColor = true;
@@ -124,9 +144,11 @@
             // btnStartOrder
             // 
             this.btnStartOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartOrder.Location = new System.Drawing.Point(57, 762);
+            this.btnStartOrder.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnStartOrder.Location = new System.Drawing.Point(43, 619);
+            this.btnStartOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStartOrder.Name = "btnStartOrder";
-            this.btnStartOrder.Size = new System.Drawing.Size(224, 54);
+            this.btnStartOrder.Size = new System.Drawing.Size(168, 44);
             this.btnStartOrder.TabIndex = 5;
             this.btnStartOrder.Text = "Start Order";
             this.btnStartOrder.UseVisualStyleBackColor = true;
@@ -152,147 +174,169 @@
             this.grpbxAddNewCustomer.Controls.Add(this.label3);
             this.grpbxAddNewCustomer.Controls.Add(this.btnAddNewCustomer);
             this.grpbxAddNewCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpbxAddNewCustomer.Location = new System.Drawing.Point(35, 21);
+            this.grpbxAddNewCustomer.ForeColor = System.Drawing.SystemColors.Control;
+            this.grpbxAddNewCustomer.Location = new System.Drawing.Point(26, 17);
+            this.grpbxAddNewCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxAddNewCustomer.Name = "grpbxAddNewCustomer";
-            this.grpbxAddNewCustomer.Size = new System.Drawing.Size(1461, 215);
+            this.grpbxAddNewCustomer.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxAddNewCustomer.Size = new System.Drawing.Size(1096, 175);
             this.grpbxAddNewCustomer.TabIndex = 6;
             this.grpbxAddNewCustomer.TabStop = false;
             this.grpbxAddNewCustomer.Text = "Add New Customer";
             // 
             // txtNewZip
             // 
-            this.txtNewZip.Location = new System.Drawing.Point(648, 124);
+            this.txtNewZip.Location = new System.Drawing.Point(486, 101);
+            this.txtNewZip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewZip.Name = "txtNewZip";
-            this.txtNewZip.Size = new System.Drawing.Size(238, 30);
+            this.txtNewZip.Size = new System.Drawing.Size(180, 26);
             this.txtNewZip.TabIndex = 19;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(587, 129);
+            this.label10.Location = new System.Drawing.Point(440, 105);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 25);
+            this.label10.Size = new System.Drawing.Size(44, 20);
             this.label10.TabIndex = 18;
             this.label10.Text = "Zip: ";
             // 
             // txtNewState
             // 
-            this.txtNewState.Location = new System.Drawing.Point(177, 126);
+            this.txtNewState.Location = new System.Drawing.Point(133, 102);
+            this.txtNewState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewState.Name = "txtNewState";
-            this.txtNewState.Size = new System.Drawing.Size(47, 30);
+            this.txtNewState.Size = new System.Drawing.Size(36, 26);
             this.txtNewState.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(83, 129);
+            this.label9.Location = new System.Drawing.Point(62, 105);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 25);
+            this.label9.Size = new System.Drawing.Size(63, 20);
             this.label9.TabIndex = 16;
             this.label9.Text = "State: ";
             // 
             // txtNewCity
             // 
-            this.txtNewCity.Location = new System.Drawing.Point(1160, 78);
+            this.txtNewCity.Location = new System.Drawing.Point(870, 63);
+            this.txtNewCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewCity.Name = "txtNewCity";
-            this.txtNewCity.Size = new System.Drawing.Size(238, 30);
+            this.txtNewCity.Size = new System.Drawing.Size(180, 26);
             this.txtNewCity.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1091, 81);
+            this.label8.Location = new System.Drawing.Point(818, 66);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 25);
+            this.label8.Size = new System.Drawing.Size(49, 20);
             this.label8.TabIndex = 14;
             this.label8.Text = "City: ";
             // 
             // txtNewAddress2
             // 
-            this.txtNewAddress2.Location = new System.Drawing.Point(648, 78);
+            this.txtNewAddress2.Location = new System.Drawing.Point(486, 63);
+            this.txtNewAddress2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewAddress2.Name = "txtNewAddress2";
-            this.txtNewAddress2.Size = new System.Drawing.Size(238, 30);
+            this.txtNewAddress2.Size = new System.Drawing.Size(180, 26);
             this.txtNewAddress2.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(513, 83);
+            this.label7.Location = new System.Drawing.Point(385, 67);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 25);
+            this.label7.Size = new System.Drawing.Size(95, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Address2: ";
             // 
             // txtNewAddress1
             // 
-            this.txtNewAddress1.Location = new System.Drawing.Point(177, 78);
+            this.txtNewAddress1.Location = new System.Drawing.Point(133, 63);
+            this.txtNewAddress1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewAddress1.Name = "txtNewAddress1";
-            this.txtNewAddress1.Size = new System.Drawing.Size(238, 30);
+            this.txtNewAddress1.Size = new System.Drawing.Size(180, 26);
             this.txtNewAddress1.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(42, 83);
+            this.label6.Location = new System.Drawing.Point(32, 67);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 25);
+            this.label6.Size = new System.Drawing.Size(95, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Address1: ";
             // 
             // txtNewPhone
             // 
-            this.txtNewPhone.Location = new System.Drawing.Point(1160, 29);
+            this.txtNewPhone.Location = new System.Drawing.Point(870, 24);
+            this.txtNewPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewPhone.Name = "txtNewPhone";
-            this.txtNewPhone.Size = new System.Drawing.Size(238, 30);
+            this.txtNewPhone.Size = new System.Drawing.Size(180, 26);
             this.txtNewPhone.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(986, 37);
+            this.label5.Location = new System.Drawing.Point(740, 30);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(168, 25);
+            this.label5.Size = new System.Drawing.Size(137, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Phone Number: ";
             // 
             // txtNewFirstName
             // 
-            this.txtNewFirstName.Location = new System.Drawing.Point(177, 29);
+            this.txtNewFirstName.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtNewFirstName.Location = new System.Drawing.Point(133, 24);
+            this.txtNewFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewFirstName.Name = "txtNewFirstName";
-            this.txtNewFirstName.Size = new System.Drawing.Size(238, 30);
+            this.txtNewFirstName.Size = new System.Drawing.Size(180, 26);
             this.txtNewFirstName.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 34);
+            this.label4.Location = new System.Drawing.Point(32, 28);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 25);
+            this.label4.Size = new System.Drawing.Size(106, 20);
             this.label4.TabIndex = 6;
             this.label4.Text = "First Name: ";
             // 
             // txtNewLastName
             // 
-            this.txtNewLastName.Location = new System.Drawing.Point(648, 29);
+            this.txtNewLastName.Location = new System.Drawing.Point(486, 24);
+            this.txtNewLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNewLastName.Name = "txtNewLastName";
-            this.txtNewLastName.Size = new System.Drawing.Size(238, 30);
+            this.txtNewLastName.Size = new System.Drawing.Size(180, 26);
             this.txtNewLastName.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(514, 37);
+            this.label3.Location = new System.Drawing.Point(386, 30);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 25);
+            this.label3.Size = new System.Drawing.Size(105, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name: ";
             // 
             // btnDisplay
             // 
             this.btnDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDisplay.Location = new System.Drawing.Point(57, 257);
+            this.btnDisplay.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDisplay.Location = new System.Drawing.Point(43, 209);
+            this.btnDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(224, 54);
+            this.btnDisplay.Size = new System.Drawing.Size(189, 44);
             this.btnDisplay.TabIndex = 7;
             this.btnDisplay.Text = "Display Customers";
             this.btnDisplay.UseVisualStyleBackColor = true;
@@ -301,9 +345,11 @@
             // btnMainMenu
             // 
             this.btnMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMainMenu.Location = new System.Drawing.Point(1272, 764);
+            this.btnMainMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMainMenu.Location = new System.Drawing.Point(954, 621);
+            this.btnMainMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(224, 54);
+            this.btnMainMenu.Size = new System.Drawing.Size(168, 44);
             this.btnMainMenu.TabIndex = 8;
             this.btnMainMenu.Text = "Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
@@ -311,14 +357,17 @@
             // 
             // CustomerPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1528, 830);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(1146, 674);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnDisplay);
             this.Controls.Add(this.grpbxAddNewCustomer);
             this.Controls.Add(this.btnStartOrder);
             this.Controls.Add(this.grpboxCustomer);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CustomerPage";
             this.Text = "CustomerPage";
             this.grpboxCustomer.ResumeLayout(false);

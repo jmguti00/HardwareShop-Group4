@@ -281,6 +281,7 @@ namespace Hardware_Shop
             this.Hide();
             CheckOutForm checkOut = new CheckOutForm();
             checkOut.Show();
+            ToolsAndAccessories.vc.Hide();
         }
     }
 }
