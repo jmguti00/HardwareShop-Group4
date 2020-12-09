@@ -41,15 +41,7 @@ namespace Hardware_Shop
 
         private void ViewCart_Load(object sender, EventArgs e)
         {
-            //string item = string.Join(" ", ToolsAndAccessories.cart);
-            //int x = 0;
-
-            ////loads each item from cart into lstOrderSummary
-            //foreach(ToolsAndAccessories.item i in ToolsAndAccessories.cart)
-            //{
-            //    x++;
-            //    lstOrderSummary.Items.Add(item + " " + x);
-            //}
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

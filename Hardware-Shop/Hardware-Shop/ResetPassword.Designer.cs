@@ -39,45 +39,51 @@
             // txtResetPass
             // 
             this.txtResetPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResetPass.Location = new System.Drawing.Point(205, 61);
+            this.txtResetPass.Location = new System.Drawing.Point(154, 50);
+            this.txtResetPass.Margin = new System.Windows.Forms.Padding(2);
             this.txtResetPass.Name = "txtResetPass";
-            this.txtResetPass.Size = new System.Drawing.Size(187, 30);
+            this.txtResetPass.Size = new System.Drawing.Size(141, 26);
             this.txtResetPass.TabIndex = 0;
             // 
             // txtResetPassVerify
             // 
             this.txtResetPassVerify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResetPassVerify.Location = new System.Drawing.Point(205, 117);
+            this.txtResetPassVerify.Location = new System.Drawing.Point(154, 95);
+            this.txtResetPassVerify.Margin = new System.Windows.Forms.Padding(2);
             this.txtResetPassVerify.Name = "txtResetPassVerify";
-            this.txtResetPassVerify.Size = new System.Drawing.Size(187, 30);
+            this.txtResetPassVerify.Size = new System.Drawing.Size(141, 26);
             this.txtResetPassVerify.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 61);
+            this.label1.Location = new System.Drawing.Point(9, 50);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 25);
+            this.label1.Size = new System.Drawing.Size(130, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "New Password";
+            this.label1.Text = "New Password:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 117);
+            this.label2.Location = new System.Drawing.Point(9, 95);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 25);
+            this.label2.Size = new System.Drawing.Size(142, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Verify Password";
+            this.label2.Text = "Verify Password:";
             // 
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(17, 169);
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReset.Location = new System.Drawing.Point(57, 137);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 33);
+            this.btnReset.Size = new System.Drawing.Size(94, 27);
             this.btnReset.TabIndex = 4;
             this.btnReset.Text = "Reset Password";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -86,9 +92,11 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(267, 169);
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnLogin.Location = new System.Drawing.Point(166, 137);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(125, 33);
+            this.btnLogin.Size = new System.Drawing.Size(94, 27);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -96,15 +104,18 @@
             // 
             // ResetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 245);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(331, 199);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtResetPassVerify);
             this.Controls.Add(this.txtResetPass);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ResetPassword";
             this.Text = "ResetPassword";
             this.ResumeLayout(false);

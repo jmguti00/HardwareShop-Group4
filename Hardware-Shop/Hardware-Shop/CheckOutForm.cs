@@ -62,7 +62,6 @@ namespace Hardware_Shop
                 SqlConnection con = new SqlConnection("Data Source=cstnt.tstc.edu;Initial Catalog=inew2330fa20;Persist Security Info=True;User ID=group4bfa202330;Password=1938274");
                 con.Open();
                 string payment = "";
-                int orderNumber = 0;
                 int theCustomerID;
 
                 if (rdoCheck.Checked == true)
@@ -81,7 +80,7 @@ namespace Hardware_Shop
 
                 theCustomerID = int.Parse(CustomerPage.newCustomer.id.ToString());
 
-                SqlCommand cmd = new SqlCommand("insert into group4bfa202330.OrderTable values('"+orderDate+"','"+theCustomerID+"','"+orderNumber+"','"+lblBalance.Text+"','"+payment+"')",con);
+                SqlCommand cmd = new SqlCommand("insert into group4bfa202330.OrderTable values('"+orderDate+"','"+theCustomerID+"','"+lblBalance.Text+"','"+payment+"')",con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Order Submitted!");
                 
@@ -103,10 +102,8 @@ namespace Hardware_Shop
                 con.Close();
 
                 this.Close();
-
-                Hardware_Shop hs = new Hardware_Shop();
-
-                hs.Show();
+                CustomerPage cp = new CustomerPage();
+                cp.Show();
 
             }
             catch (Exception ex)

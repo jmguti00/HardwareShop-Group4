@@ -288,8 +288,6 @@ namespace Hardware_Shop
         {
             try
             {
-                
-                //amountShovels++;
                 query = "select * from group4bfa202330.Product where ProductID = '" + 15 + "'";
                 con.Open();
                 SqlCommand com = new SqlCommand(query, con);
@@ -328,6 +326,7 @@ namespace Hardware_Shop
             CheckOutForm checkOut = new CheckOutForm();
             checkOut.Show();
             this.Hide();
+            vc.Hide();
 
         }
 
@@ -335,7 +334,6 @@ namespace Hardware_Shop
         {
             try
             {
-                //amountShovels++;
                 query = "select * from group4bfa202330.Product where ProductID = '" + 1 + "'";
                 con.Open();
                 SqlCommand com = new SqlCommand(query, con);

@@ -348,9 +348,9 @@ namespace Hardware_Shop
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             CheckOutForm checkOut = new CheckOutForm();
             checkOut.Show();
+            ToolsAndAccessories.vc.Hide();
         }
     }
 }

@@ -35,9 +35,11 @@
             // btnMain
             // 
             this.btnMain.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMain.Location = new System.Drawing.Point(463, 12);
+            this.btnMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMain.Location = new System.Drawing.Point(347, 10);
+            this.btnMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMain.Name = "btnMain";
-            this.btnMain.Size = new System.Drawing.Size(157, 33);
+            this.btnMain.Size = new System.Drawing.Size(118, 27);
             this.btnMain.TabIndex = 0;
             this.btnMain.Text = "Main Menu";
             this.btnMain.UseVisualStyleBackColor = true;
@@ -48,19 +50,23 @@
             this.crystalReportViewer1.ActiveViewIndex = -1;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(12, 62);
+            this.crystalReportViewer1.Location = new System.Drawing.Point(9, 50);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1154, 642);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(866, 522);
             this.crystalReportViewer1.TabIndex = 1;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // ProductInventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 716);
+            this.BackColor = System.Drawing.Color.Indigo;
+            this.ClientSize = new System.Drawing.Size(898, 582);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnMain);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProductInventory";
             this.Text = "ProductInventory";
             this.ResumeLayout(false);

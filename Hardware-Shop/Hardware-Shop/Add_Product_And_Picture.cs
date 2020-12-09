@@ -246,12 +246,17 @@ namespace Hardware_Shop
         private void btnAddPictureMenu_Click(object sender, EventArgs e)
         {
             //set the following groupbox fields to visibilty true and false
-            grpbxAddPicture.Visible = true;            
+            grpbxAddPicture.Visible = true;
             grpbxAddNewProduct.Visible = false;
             grpbxUpdateInformation.Visible = false;
 
             //call method to set field to blank
             setFieldsToBlank();
+
+            //edit color properties
+            grpbxAddPicture.ForeColor = System.Drawing.Color.White;
+            btnEnter.ForeColor = System.Drawing.Color.Black;
+            btnAddPicture.ForeColor = System.Drawing.Color.Black;
 
             //enable and disable the following txtbox fields
             txtProductId.Enabled = false;
@@ -260,8 +265,11 @@ namespace Hardware_Shop
             txtQuantity.Enabled = true;
             txtPrice.Enabled = true;
 
+
             //allow btnBrowse to be visible
+            btnBrowse.ForeColor = System.Drawing.Color.Black;
             btnBrowse.Visible = false;
+            
         }
 
         //btnAddProductMenu click event to allow grpbxAddNewProduct to be visible
@@ -271,6 +279,11 @@ namespace Hardware_Shop
             grpbxAddPicture.Visible = false;
             grpbxAddNewProduct.Visible = true;
             grpbxUpdateInformation.Visible = false;
+
+            //edit button color properties
+            grpbxAddNewProduct.ForeColor = System.Drawing.Color.White;
+            btnNewBrowse.ForeColor = System.Drawing.Color.Black;
+            btnSave.ForeColor = System.Drawing.Color.Black;
 
             //call method to set field to blank
             setFieldsToBlank();

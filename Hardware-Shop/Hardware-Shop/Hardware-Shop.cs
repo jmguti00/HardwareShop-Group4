@@ -94,9 +94,9 @@ namespace Hardware_Shop
 
         private void btnContactNumbers_Click(object sender, EventArgs e)
         {
-            string contactInfo = "Manager: Kanin Furlow, Phone Number: (956) 399-0101\n" +
-                                 "\nSupervisor: Julian Gutierrez, Phone Number: (956) 399-0102\n" +
-                                 "\nHR Department: Sterling Ford, Phone Number: (956) 399-0103\n" +
+            string contactInfo = "Manager: Mike Tyson, Phone Number: (956) 399-0101\n" +
+                                 "\nSupervisor: Joe Burrow, Phone Number: (956) 399-0102\n" +
+                                 "\nHR Department: Floyd Mayweather Jr., Phone Number: (956) 399-0103\n" +
                                  "\nCustomer Service Phone Number: (956) 399-0104";
 
             lblInfo.Text = contactInfo;
