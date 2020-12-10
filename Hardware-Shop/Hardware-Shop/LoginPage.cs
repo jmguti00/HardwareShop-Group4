@@ -36,28 +36,38 @@ namespace Hardware_Shop
 
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Login successfully");
+                    //MessageBox.Show("Login successfully");
 
-                    if (Hardware_Shop.User.userName == "Customer")
+                    if (Hardware_Shop.User.userName == "Customer" && txtUserName.Text == "employee")
                     {
+                        MessageBox.Show("Login successfully");
+
                         this.Hide();
 
                         CustomerPage cp = new CustomerPage();
                         cp.Show();
                     }
-                    else if (Hardware_Shop.User.userName == "Manager")
+                    else if (Hardware_Shop.User.userName == "Manager" && txtUserName.Text =="manager")
                     {
+                        MessageBox.Show("Login successfully");
+
                         this.Hide();
 
                         Add_Product_And_Picture addProductPicture = new Add_Product_And_Picture();
                         addProductPicture.Show();
                     }
-                    else if (Hardware_Shop.User.userName == "Supervisor")
+                    else if (Hardware_Shop.User.userName == "Supervisor" && txtUserName.Text == "supervisor")
                     {
+                        MessageBox.Show("Login successfully");
+
                         this.Hide();
 
                         EmployeePage ep = new EmployeePage();
                         ep.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong password or user ID");
                     }
 
                 }
