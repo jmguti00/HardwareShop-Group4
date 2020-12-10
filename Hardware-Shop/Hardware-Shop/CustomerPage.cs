@@ -70,21 +70,20 @@ namespace Hardware_Shop
                 da.InsertCommand.ExecuteNonQuery();
 
                 cs.Close();
+
+                txtNewFirstName.Text = "";
+                txtNewLastName.Text = "";
+                txtNewPhone.Text = "";
+                txtNewAddress1.Text = "";
+                txtNewAddress2.Text = "";
+                txtNewCity.Text = "";
+                txtNewState.Text = "";
+                txtNewZip.Text = "";
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
-            txtNewFirstName.Text = "";
-            txtNewLastName.Text = "";
-            txtNewPhone.Text = "";
-            txtNewAddress1.Text = "";
-            txtNewAddress2.Text = "";
-            txtNewCity.Text = "";
-            txtNewState.Text = "";
-            txtNewZip.Text = "";
-            
 
         }
 
@@ -99,21 +98,30 @@ namespace Hardware_Shop
 
         private void btnStartOrder_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            try
+            {
+                this.Hide();
 
-            //assign the index of productTable datagridview
-            newCustomer.id = customerTable[0, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.fName = customerTable[1, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.lName = customerTable[2, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.phoneNum = customerTable[3, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.address = customerTable[4, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.address1 = customerTable[5, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.city = customerTable[6, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.state = customerTable[7, customerTable.CurrentRow.Index].Value.ToString();
-            newCustomer.zip = customerTable[8, customerTable.CurrentRow.Index].Value.ToString();
+                //assign the index of productTable datagridview
+                newCustomer.id = customerTable[0, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.fName = customerTable[1, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.lName = customerTable[2, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.phoneNum = customerTable[3, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.address = customerTable[4, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.address1 = customerTable[5, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.city = customerTable[6, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.state = customerTable[7, customerTable.CurrentRow.Index].Value.ToString();
+                newCustomer.zip = customerTable[8, customerTable.CurrentRow.Index].Value.ToString();
 
-            PlaceOrder po = new PlaceOrder();
-            po.Show();
+                PlaceOrder po = new PlaceOrder();
+                po.Show();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            
         }
         
         public class customer

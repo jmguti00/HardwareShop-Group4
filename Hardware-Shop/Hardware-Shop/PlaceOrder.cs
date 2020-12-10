@@ -19,11 +19,6 @@ namespace Hardware_Shop
             lblOrderFor.Text = CustomerPage.newCustomer.ToString();
         }
 
-        private void PlaceOrder_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnToolsAccessories_Click(object sender, EventArgs e)
         {
             ToolsAndAccessories TaA = new ToolsAndAccessories();

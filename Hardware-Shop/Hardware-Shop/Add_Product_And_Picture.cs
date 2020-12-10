@@ -131,6 +131,7 @@ namespace Hardware_Shop
             //disable the textbox fields so that user may not typ in them
             txtProductId.Text = Product.productID;
             txtProductId.Enabled = false;
+            //txtProductId.Visible = true;
             txtProductName.Text = Product.productName;
             txtProductName.Enabled = false;
             txtDescription.Text = Product.productDesc;
@@ -172,6 +173,7 @@ namespace Hardware_Shop
 
             //enable and disable the following txtbox fields
             txtProductId.Enabled = false;
+            //txtProductId.Visible = true;
             txtProductName.Enabled = true;
             txtDescription.Enabled = true;
             txtQuantity.Enabled = true;
@@ -228,18 +230,18 @@ namespace Hardware_Shop
 
                 //call showProducTable method to reload the productTable datagridview
                 showProductTable();
+
+                //call method to set field to blank
+                setFieldsToBlank();
+
+                //set the follwing groupboxe fields to visibilty false
+                grpbxAddPicture.Visible = false;
+                grpbxAddNewProduct.Visible = false;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
-            //call method to set field to blank
-            setFieldsToBlank();
-
-            //set the follwing groupboxe fields to visibilty false
-            grpbxAddPicture.Visible = false;
-            grpbxAddNewProduct.Visible = false;
         }
 
         //btnAddPictureMenu click event to allow grpbxAddPicture to be visible

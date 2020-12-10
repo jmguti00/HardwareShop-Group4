@@ -36,10 +36,6 @@ namespace Hardware_Shop
                 cr.SetDataSource(ds.Tables["Product"]);
                 crystalReportViewer1.ReportSource = cr;
                 crystalReportViewer1.Refresh();
-
-
-
-
             }
             catch(Exception ex)
             {

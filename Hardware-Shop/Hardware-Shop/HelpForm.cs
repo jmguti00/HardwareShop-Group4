@@ -31,9 +31,6 @@ namespace Hardware_Shop
             {
                 MessageBox.Show(ex.Message);
             }
-            
-
-
         }
 
         private void btnMainMenu_Click(object sender, EventArgs e)

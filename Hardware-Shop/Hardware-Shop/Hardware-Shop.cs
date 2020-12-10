@@ -84,7 +84,8 @@ namespace Hardware_Shop
 
         private void btnVisionStatement_Click(object sender, EventArgs e)
         {
-            string vissionStatment = "We envision reaching every customer in our community excelling with customer service along with providing product delivery on time. \n\nBy 2025 we will: \n" +
+            string vissionStatment = "We envision reaching every customer in our community excelling with customer service along with providing product delivery on time." +
+                                     "\n\nBy 2025 we will: \n" +
                                      "\n* Be in EVERY city" +
                                      "\n* Expand our footprint" +
                                      "\n* Achieve all of our customer’s satisfactions";
